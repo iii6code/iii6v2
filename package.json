@@ -32,12 +32,13 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
+    "-": "^0.0.1",
+    "@babel/core": "^7.16.7",
     "@chainlink/contracts": "^0.6.1",
     "@chainlink/contracts-ccip": "^0.7.6",
+    "@metamask/detect-provider": "^1.2.0",
     "@openzeppelin/contracts": "^5.0.0",
     "@openzeppelin/test-helpers": "^0.5.15",
-    "@babel/core": "^7.16.7",
-    "@metamask/detect-provider": "^1.2.0",
     "@truffle/hdwallet-provider": "^2.0.0",
     "@uauth/js": "^1.1.0",
     "@zondax/filecoin-solidity": "^4.0.2",
@@ -69,7 +70,7 @@
     "sass": "^1.47.0",
     "sass-loader": "^12.4.0",
     "style-loader": "^3.3.1",
-    "webpack": "^5.74.0",
+    "webpack": "^5.89.0",
     "webpack-cli": "^4.9.1",
     "webpack-dev-server": "^4.7.2"
   }

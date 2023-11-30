@@ -117,7 +117,7 @@ contract iii6CoinModel is
         uint256 _supply, // Token Max Supply
         bool _burn, // Burnable Option
         bool _pause
-    ) ERC20(_name, _sym) {
+    ) ERC20(_name, _sym) Ownable(msg.sender) {
         _setRate(_rate); /** @dev see _setRate() :: line138 */
         MAX_SUPPLY = _supply;
         title = _name;
@@ -148,12 +148,8 @@ contract iii6CoinModel is
     /**
      * @dev overrides ERC20 & ERC20Pausable
      */
-    function _beforeTokenTransfer(
-        address from,
-        address to,
-        uint256 amount
-    ) internal override(ERC20, ERC20Pausable) whenNotPaused {
-        super._beforeTokenTransfer(from, to, amount);
+    function _update(address from, address to, uint256 value) internal virtual override(ERC20Pausable, ERC20) whenNotPaused {
+        super._update(from, to, value);
     }
 
     // ██████╗░██╗░░░██╗██████╗░██╗░░░░░██╗░█████╗░  ███████╗███╗░░██╗██╗░░██╗
@@ -264,7 +260,7 @@ contract iii6CoinModel is
     }
 }
 
-contract iii6CoinModelDrop is iii6CoinModel {
+abstract contract iii6CoinModelDrop is iii6CoinModel {
     /**
      * @dev creates an instance of iii6CoinModel
      * @param _name token name

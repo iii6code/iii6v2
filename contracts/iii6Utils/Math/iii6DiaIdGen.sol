@@ -59,7 +59,7 @@
 pragma solidity ^0.8.7;
 
 import "../Oracles/iii6VRFConsumer.sol";
-import "../Math/iii6Math.sol";
+import "./iii6Math.sol";
 
 contract iiiDiaIdGen is iii6Math {
     iii6VRFEth private iii6VRFeth;

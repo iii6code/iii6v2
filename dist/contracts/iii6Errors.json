@@ -1,0 +1,579 @@
+{
+  "contractName": "iii6Errors",
+  "abi": [
+    {
+      "inputs": [],
+      "name": "All_Slots_Taken",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "Already_Listed",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "Array_Length_Mismatch",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "Event_Has_Ended",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "Greenlist_Expired",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "Insufficient_Amount",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "Insufficient_Balance",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "Insufficient_Funds",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "Insufficient_MLQ",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "Insufficient_Supply",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "Invalid_Amount",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "Invalid_Response",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "Max_Tokens_Minted",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "Min_Requirements_Not_Met",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "Mint_In_Progress",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "Mint_Is_Not_Yet_Live",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "Not_Burnable",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "Not_Friends",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "Not_Friends_Rev",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "Not_Greenlisted",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "Not_Pausable",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "Sold_Out",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "Unauthorized",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "You_Are_Not_The_Holder",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "You_Need_To_Wait",
+      "type": "error"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.8.23+commit.f704f362\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"All_Slots_Taken\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"Already_Listed\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"Array_Length_Mismatch\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"Event_Has_Ended\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"Greenlist_Expired\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"Insufficient_Amount\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"Insufficient_Balance\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"Insufficient_Funds\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"Insufficient_MLQ\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"Insufficient_Supply\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"Invalid_Amount\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"Invalid_Response\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"Max_Tokens_Minted\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"Min_Requirements_Not_Met\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"Mint_In_Progress\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"Mint_Is_Not_Yet_Live\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"Not_Burnable\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"Not_Friends\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"Not_Friends_Rev\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"Not_Greenlisted\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"Not_Pausable\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"Sold_Out\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"Unauthorized\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"You_Are_Not_The_Holder\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"You_Need_To_Wait\",\"type\":\"error\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/iii6utils/Misc/Errors/iii6Errors.sol\":\"iii6Errors\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/iii6utils/Misc/Errors/iii6Errors.sol\":{\"keccak256\":\"0x0fa08b9d5f1d9bb38d328004067f1d68d2caad65fec8c90e5d14d8092ab19e91\",\"license\":\"GPL-3.0\",\"urls\":[\"bzz-raw://dbb894b6899c0f54b5cf4649063cf4e0c139d7ee60b9860c95657021545db8bd\",\"dweb:/ipfs/QmQeC3k1TeeDELme3t8J2RDmXnm4mPCtuz29BY5JqfBgBQ\"]}},\"version\":1}",
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "immutableReferences": {},
+  "generatedSources": [],
+  "deployedGeneratedSources": [],
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "// SPDX-License-Identifier: GPL-3.0\n// // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // //\n//\n//      MMWKd:..                                                                                    ..:dKWMM\n//      MKl.                                                                                            .lKW\n//      O'       ..''''''''''''.     .''''''.     .'''''.      .''''''''''''''.     .''''''''''''..       'O\n//      '     .ckKNNWNWWWWWWWWWk.   .xNWWNWNl    ,0WWWWW0,     lNWWWWWWWWWNWNk'    ;0NNNWWWWWWWWNNKkc.     '\n//           ,OWMMMMMMMMMMMMMMMO.   .kMMMMMWl    ,KMMMMMK,     lWMMMMMMMMMMM0,    ;KMMMMMMMMMMMMMMMMWO,\n//          .kMMMMMMMMMMMMMMMMMO.   .kMMMMMWl    ,KMMMMMK,     lWMMMMMMMMMM0,    ;KMMMMMMMMMMMMMMMMMMMk.\n//          '0MMMMMMMMMMMMMMMMMO.   .kMMMMMWl    ,KMMMMMK,     lWMMMMMMMMM0,    :KMMMMMMMMMMMMMMMMMMMM0'\n//          '0MMMMMMMMMMMMMMMMMO.   .kMMMMMWl    ,KMMMMMK,     lWMMMMMMMM0,    :KMMMMMMMMMMMMMMMMMMMMM0'\n//          '0MMMMMMMMMMMMMMMMMO.   .kMMMMMWl    ,KMMMMMK,     lWMMMMMMM0,    ;0NNWWMMMMMMMMMMMMMMMMMM0'\n//          '0MMMMMMMMMMMMMMMMMO.   .kMMMMMWl    ,KMMMMMK,     lWMMMMMM0,     .'.',;lkNMMMMMMMMMMMMMMM0'\n//          '0MMMMMMMMMMMMMMMMMO.   .kMMMMMWl    ,KMMMMMK,     lWMMMMMK;              ,kWMMMMMMMMMMMMM0'\n//          '0MMMMMMMMMMMMMMMMMO.   .kMMMMMWl    ,KMMMMMK,     lWMMMMX:    .:oxxdc'    .dWMMMMMMMMMMMM0'\n//          '0MMMMMMMMMMMMMMMMMO.   .kMMMMMWl    ,KMMMMMK,     lWMMMWd.   ,OWMMMMMXl.   '0MMMMMMMMMMMM0'\n//          '0MMMMMMMMMMMMMMMMMO.   .kMMMMMWl    ,KMMMMMK,     lWMMMX;   .kMMMMMMMMK,   .xMMMMMMMMMMMM0'\n//          '0MMMMMMMMMMMMMMMMMO.   .kMMMMMWl    ,KMMMMMK,     lWMMM0'   .OMMMMMMMMX;   .xMMMMMMMMMMMM0'\n//          .OMMMMMMMMMMMMMMMMMO.   .kMMMMMWl    ,KMMMMMK,     lWMMMK,    lNMMMMMMWx.   '0MMMMMMMMMMMMO.\n//           lNMMMMMMMMMMMMMMMMO.   .kMMMMMWl    ,KMMMMMK,     lWMMMWd.   .:x0KKKkc.   .dWMMMMMMMMMMMNl\n//      .    .c0WMMMMMMMMMMMMMMO.   .kMMMMMWo    ,KMMMMMK,     lWMMMMNd.     ....     .xNMMMMMMMMMMW0c.    .\n//      l      .,lddxxxxxxxxxxxc.    :xxxxxd,    .lxxxxxl.     ,dxxxxxd:.            .cdxxxxxxxxddl,.      l\n//      No.                                                                                              .oN\n//      MW0l'                                                                                          'l0WM\n//      MMMWKd;.                                                                                    .;dKWMMM\n//\n// // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // //\n//                                                                                                                                                                                  //\n//      @dev            ::              Aron Mauritala Ayuk                                                                                                                                          //\n//      @msg            ::              stereo@iii6.xyz                                                                                                                                   //\n//      @github         ::              @stereoIII6\n//      @twitter        ::              @stereoIII6                                                                                                                                              //\n//                                                                                                                                                                                  //\n// // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // //\n//                                                                                                                                                                                  //\n//      @dev            ::              Juan Xavier Valverde                                                                                                                                    //\n//      @msg            ::              juanxavier@iii6.xyz                                                                                                                               //\n//      @twitter        ::              @JuanXavier                                                                                                                                             //\n//      @github         ::              @JuanXavier                                                                                                                                             //\n//                                                                                                                                                                                  //                                                                                                                                                                                 //\n// // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // //\n//  *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   //\n// // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // //\n//                                                                                                                                                                                  //\n//      @company        ::              Fractio Holding                                                                                                                                                                       //\n//      @title          ::              iii6 Global Enums                                                                                                                           //\n//      @description    ::              Global Enum Library                                                                                                                           //\n//      @version        ::              0.0.1                                                                                                                                       //\n//      @purpose        ::              Enum Library                                                                                                          //\n//                                                                                                                                                                                  //\n//                                                                                                                                                                                  //\n//                                                                                                                                                                                  //\n//                                                                                                                                                                                  //\n//                                                                                                                                                                                  //\n// // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // //\n//  *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   //\n// // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // //\n\n/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////\n\n/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////\n\npragma solidity ^0.8.7;\n\nabstract contract iii6Errors {\n    error Already_Listed();\n    error All_Slots_Taken();\n    error Insufficient_Balance();\n    error Insufficient_MLQ();\n    error Insufficient_Funds();\n    error Insufficient_Amount();\n    error Invalid_Amount();\n    error Min_Requirements_Not_Met();\n    error Mint_Is_Not_Yet_Live();\n    error Mint_In_Progress();\n    error Max_Tokens_Minted();\n    error Greenlist_Expired();\n    error Insufficient_Supply();\n    error Not_Greenlisted();\n    error Sold_Out();\n    error Event_Has_Ended();\n    error Unauthorized();\n    error You_Need_To_Wait();\n    error You_Are_Not_The_Holder();\n    error Array_Length_Mismatch();\n    error Invalid_Response();\n    error Not_Burnable();\n    error Not_Pausable();\n    error Not_Friends();\n    error Not_Friends_Rev();\n}\n",
+  "sourcePath": "/Users/iii6/Documents/GitHub/iii6v2/iii6v2/contracts/iii6utils/Misc/Errors/iii6Errors.sol",
+  "ast": {
+    "absolutePath": "project:/contracts/iii6utils/Misc/Errors/iii6Errors.sol",
+    "exportedSymbols": {
+      "iii6Errors": [
+        8274
+      ]
+    },
+    "id": 8275,
+    "license": "GPL-3.0",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 8223,
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".7"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "8629:23:56"
+      },
+      {
+        "abstract": true,
+        "baseContracts": [],
+        "canonicalName": "iii6Errors",
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "fullyImplemented": true,
+        "id": 8274,
+        "linearizedBaseContracts": [
+          8274
+        ],
+        "name": "iii6Errors",
+        "nameLocation": "8672:10:56",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "errorSelector": "e08ca6b0",
+            "id": 8225,
+            "name": "Already_Listed",
+            "nameLocation": "8695:14:56",
+            "nodeType": "ErrorDefinition",
+            "parameters": {
+              "id": 8224,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "8709:2:56"
+            },
+            "src": "8689:23:56"
+          },
+          {
+            "errorSelector": "ea5db9c5",
+            "id": 8227,
+            "name": "All_Slots_Taken",
+            "nameLocation": "8723:15:56",
+            "nodeType": "ErrorDefinition",
+            "parameters": {
+              "id": 8226,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "8738:2:56"
+            },
+            "src": "8717:24:56"
+          },
+          {
+            "errorSelector": "efc60c14",
+            "id": 8229,
+            "name": "Insufficient_Balance",
+            "nameLocation": "8752:20:56",
+            "nodeType": "ErrorDefinition",
+            "parameters": {
+              "id": 8228,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "8772:2:56"
+            },
+            "src": "8746:29:56"
+          },
+          {
+            "errorSelector": "d578678f",
+            "id": 8231,
+            "name": "Insufficient_MLQ",
+            "nameLocation": "8786:16:56",
+            "nodeType": "ErrorDefinition",
+            "parameters": {
+              "id": 8230,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "8802:2:56"
+            },
+            "src": "8780:25:56"
+          },
+          {
+            "errorSelector": "9bb42d4b",
+            "id": 8233,
+            "name": "Insufficient_Funds",
+            "nameLocation": "8816:18:56",
+            "nodeType": "ErrorDefinition",
+            "parameters": {
+              "id": 8232,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "8834:2:56"
+            },
+            "src": "8810:27:56"
+          },
+          {
+            "errorSelector": "99956c46",
+            "id": 8235,
+            "name": "Insufficient_Amount",
+            "nameLocation": "8848:19:56",
+            "nodeType": "ErrorDefinition",
+            "parameters": {
+              "id": 8234,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "8867:2:56"
+            },
+            "src": "8842:28:56"
+          },
+          {
+            "errorSelector": "064a6c41",
+            "id": 8237,
+            "name": "Invalid_Amount",
+            "nameLocation": "8881:14:56",
+            "nodeType": "ErrorDefinition",
+            "parameters": {
+              "id": 8236,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "8895:2:56"
+            },
+            "src": "8875:23:56"
+          },
+          {
+            "errorSelector": "3a5bc321",
+            "id": 8239,
+            "name": "Min_Requirements_Not_Met",
+            "nameLocation": "8909:24:56",
+            "nodeType": "ErrorDefinition",
+            "parameters": {
+              "id": 8238,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "8933:2:56"
+            },
+            "src": "8903:33:56"
+          },
+          {
+            "errorSelector": "50c9ab5c",
+            "id": 8241,
+            "name": "Mint_Is_Not_Yet_Live",
+            "nameLocation": "8947:20:56",
+            "nodeType": "ErrorDefinition",
+            "parameters": {
+              "id": 8240,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "8967:2:56"
+            },
+            "src": "8941:29:56"
+          },
+          {
+            "errorSelector": "4c17e010",
+            "id": 8243,
+            "name": "Mint_In_Progress",
+            "nameLocation": "8981:16:56",
+            "nodeType": "ErrorDefinition",
+            "parameters": {
+              "id": 8242,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "8997:2:56"
+            },
+            "src": "8975:25:56"
+          },
+          {
+            "errorSelector": "673ed843",
+            "id": 8245,
+            "name": "Max_Tokens_Minted",
+            "nameLocation": "9011:17:56",
+            "nodeType": "ErrorDefinition",
+            "parameters": {
+              "id": 8244,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "9028:2:56"
+            },
+            "src": "9005:26:56"
+          },
+          {
+            "errorSelector": "167bf703",
+            "id": 8247,
+            "name": "Greenlist_Expired",
+            "nameLocation": "9042:17:56",
+            "nodeType": "ErrorDefinition",
+            "parameters": {
+              "id": 8246,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "9059:2:56"
+            },
+            "src": "9036:26:56"
+          },
+          {
+            "errorSelector": "1e6f0b54",
+            "id": 8249,
+            "name": "Insufficient_Supply",
+            "nameLocation": "9073:19:56",
+            "nodeType": "ErrorDefinition",
+            "parameters": {
+              "id": 8248,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "9092:2:56"
+            },
+            "src": "9067:28:56"
+          },
+          {
+            "errorSelector": "684cf537",
+            "id": 8251,
+            "name": "Not_Greenlisted",
+            "nameLocation": "9106:15:56",
+            "nodeType": "ErrorDefinition",
+            "parameters": {
+              "id": 8250,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "9121:2:56"
+            },
+            "src": "9100:24:56"
+          },
+          {
+            "errorSelector": "ada869a8",
+            "id": 8253,
+            "name": "Sold_Out",
+            "nameLocation": "9135:8:56",
+            "nodeType": "ErrorDefinition",
+            "parameters": {
+              "id": 8252,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "9143:2:56"
+            },
+            "src": "9129:17:56"
+          },
+          {
+            "errorSelector": "018a9872",
+            "id": 8255,
+            "name": "Event_Has_Ended",
+            "nameLocation": "9157:15:56",
+            "nodeType": "ErrorDefinition",
+            "parameters": {
+              "id": 8254,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "9172:2:56"
+            },
+            "src": "9151:24:56"
+          },
+          {
+            "errorSelector": "82b42900",
+            "id": 8257,
+            "name": "Unauthorized",
+            "nameLocation": "9186:12:56",
+            "nodeType": "ErrorDefinition",
+            "parameters": {
+              "id": 8256,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "9198:2:56"
+            },
+            "src": "9180:21:56"
+          },
+          {
+            "errorSelector": "7cd5facc",
+            "id": 8259,
+            "name": "You_Need_To_Wait",
+            "nameLocation": "9212:16:56",
+            "nodeType": "ErrorDefinition",
+            "parameters": {
+              "id": 8258,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "9228:2:56"
+            },
+            "src": "9206:25:56"
+          },
+          {
+            "errorSelector": "905340b2",
+            "id": 8261,
+            "name": "You_Are_Not_The_Holder",
+            "nameLocation": "9242:22:56",
+            "nodeType": "ErrorDefinition",
+            "parameters": {
+              "id": 8260,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "9264:2:56"
+            },
+            "src": "9236:31:56"
+          },
+          {
+            "errorSelector": "eb688586",
+            "id": 8263,
+            "name": "Array_Length_Mismatch",
+            "nameLocation": "9278:21:56",
+            "nodeType": "ErrorDefinition",
+            "parameters": {
+              "id": 8262,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "9299:2:56"
+            },
+            "src": "9272:30:56"
+          },
+          {
+            "errorSelector": "c1a21f4e",
+            "id": 8265,
+            "name": "Invalid_Response",
+            "nameLocation": "9313:16:56",
+            "nodeType": "ErrorDefinition",
+            "parameters": {
+              "id": 8264,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "9329:2:56"
+            },
+            "src": "9307:25:56"
+          },
+          {
+            "errorSelector": "febe7e19",
+            "id": 8267,
+            "name": "Not_Burnable",
+            "nameLocation": "9343:12:56",
+            "nodeType": "ErrorDefinition",
+            "parameters": {
+              "id": 8266,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "9355:2:56"
+            },
+            "src": "9337:21:56"
+          },
+          {
+            "errorSelector": "da61c0d8",
+            "id": 8269,
+            "name": "Not_Pausable",
+            "nameLocation": "9369:12:56",
+            "nodeType": "ErrorDefinition",
+            "parameters": {
+              "id": 8268,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "9381:2:56"
+            },
+            "src": "9363:21:56"
+          },
+          {
+            "errorSelector": "cece67ff",
+            "id": 8271,
+            "name": "Not_Friends",
+            "nameLocation": "9395:11:56",
+            "nodeType": "ErrorDefinition",
+            "parameters": {
+              "id": 8270,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "9406:2:56"
+            },
+            "src": "9389:20:56"
+          },
+          {
+            "errorSelector": "032ad0c1",
+            "id": 8273,
+            "name": "Not_Friends_Rev",
+            "nameLocation": "9420:15:56",
+            "nodeType": "ErrorDefinition",
+            "parameters": {
+              "id": 8272,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "9435:2:56"
+            },
+            "src": "9414:24:56"
+          }
+        ],
+        "scope": 8275,
+        "src": "8654:786:56",
+        "usedErrors": [
+          8225,
+          8227,
+          8229,
+          8231,
+          8233,
+          8235,
+          8237,
+          8239,
+          8241,
+          8243,
+          8245,
+          8247,
+          8249,
+          8251,
+          8253,
+          8255,
+          8257,
+          8259,
+          8261,
+          8263,
+          8265,
+          8267,
+          8269,
+          8271,
+          8273
+        ],
+        "usedEvents": []
+      }
+    ],
+    "src": "8629:812:56"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.8.23+commit.f704f362.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.4.16",
+  "updatedAt": "2023-11-30T04:01:16.775Z",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  }
+}
