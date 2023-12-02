@@ -36,24 +36,38 @@ body {
   overflow: hidden;
 }
 .link,
-.drop {
+.drop,
+.home {
   text-align: center;
   font-size: 30px;
   border: 1px solid white;
   border-radius: 9px;
+  padding-top: 0.2em;
+  -moz-user-select: none;
+  -webkit-user-select: none;
 }
 .link:hover {
   border: 1px solid grey;
   border-radius: 9px;
 }
+.drop:hover {
+  background: black;
+  color: white;
+}
+#token {
+  background: white !important;
+  color: black !important;
+  text-align: end;
+  padding-right: 1em;
+}
 #logo,
-#network {
+#netimg {
   height: 36px !important;
   text-align: start;
   border: none !important;
-}
-.alr {
-  text-align: end;
+  pointer-events: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
 }
 #head {
   grid-row: 2/3;
@@ -62,6 +76,9 @@ body {
   height: 100%;
   overflow: hidden;
   text-align: center;
+  pointer-events: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
 }
 #move {
   grid-row: 3/4;
@@ -75,6 +92,9 @@ body {
   grid-column: 1/-1;
   width: 100%;
   height: 100%;
+  pointer-events: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
 }
 .show {
   width: calc(100%);
@@ -86,4 +106,78 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+}
+#modal {
+  display: none;
+}
+.modal {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(red, 0.5);
+}
+.mbox {
+  position: relative;
+  width: 50%;
+  max-height: 80%;
+  top: 10%;
+  left: 25%;
+  background: white;
+  border: 1px solid grey;
+  border-radius: 9px;
+  display: grid;
+  grid-template-rows: 1fr 5fr 1fr;
+  grid-gap: 1em;
+}
+.mbody {
+  display: grid;
+  grid-template-rows: 1fr 3fr 1fr 3fr 1fr 3fr 1fr 3fr;
+}
+.mtitle,
+.mfoot {
+  text-align: center;
+  pointer-events: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+}
+.mlabel,
+.minp,
+.mbtn {
+  width: 80%;
+  margin-left: 10%;
+}
+.minp {
+  border-radius: 9px;
+  border: 1px solid grey;
+}
+#submit {
+  background-color: mediumseagreen;
+  color: white;
+  padding: 1em;
+  border-radius: 9px;
+}
+#close {
+  background: tomato;
+  color: white;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  position: absolute;
+  top: calc(10% + 2em);
+  left: calc(75% - 3em);
+  z-index: 1000;
+}
+#cm {
+  display: grid;
+  grid-template-columns: 2fr 6fr;
+  grid-gap: 1em;
+  border: 0;
+}
+#mobile,
+#country {
+  border-radius: 9px;
+  border: 1px solid grey;
 }

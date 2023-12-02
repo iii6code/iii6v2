@@ -1,0 +1,10 @@
+export let modalhead = document.getElementById("modalhead");
+export let modalbody = document.getElementById("modalbody");
+export let modalfoot = document.getElementById("modalfoot");
+export let name = document.getElementById("name");
+export let email = document.getElementById("email");
+export let country = document.getElementById("country");
+export let mobile = document.getElementById("mobile");
+export let pin = document.getElementById("pin");
+export let submit = document.getElementById("submit");
+export let closer = document.getElementById("close");
