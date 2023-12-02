@@ -7,23 +7,23 @@
   "immutableReferences": {},
   "generatedSources": [],
   "deployedGeneratedSources": [],
-  "sourceMap": "8654:2013:59:-:0;;;;;;;;;;;;;;;;;;;",
-  "deployedSourceMap": "8654:2013:59:-:0;;;;;",
+  "sourceMap": "8654:2013:60:-:0;;;;;;;;;;;;;;;;;;;",
+  "deployedSourceMap": "8654:2013:60:-:0;;;;;",
   "source": "// SPDX-License-Identifier: GPL-3.0\n// // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // //\n//\n//      MMWKd:..                                                                                    ..:dKWMM\n//      MKl.                                                                                            .lKW\n//      O'       ..''''''''''''.     .''''''.     .'''''.      .''''''''''''''.     .''''''''''''..       'O\n//      '     .ckKNNWNWWWWWWWWWk.   .xNWWNWNl    ,0WWWWW0,     lNWWWWWWWWWNWNk'    ;0NNNWWWWWWWWNNKkc.     '\n//           ,OWMMMMMMMMMMMMMMMO.   .kMMMMMWl    ,KMMMMMK,     lWMMMMMMMMMMM0,    ;KMMMMMMMMMMMMMMMMWO,\n//          .kMMMMMMMMMMMMMMMMMO.   .kMMMMMWl    ,KMMMMMK,     lWMMMMMMMMMM0,    ;KMMMMMMMMMMMMMMMMMMMk.\n//          '0MMMMMMMMMMMMMMMMMO.   .kMMMMMWl    ,KMMMMMK,     lWMMMMMMMMM0,    :KMMMMMMMMMMMMMMMMMMMM0'\n//          '0MMMMMMMMMMMMMMMMMO.   .kMMMMMWl    ,KMMMMMK,     lWMMMMMMMM0,    :KMMMMMMMMMMMMMMMMMMMMM0'\n//          '0MMMMMMMMMMMMMMMMMO.   .kMMMMMWl    ,KMMMMMK,     lWMMMMMMM0,    ;0NNWWMMMMMMMMMMMMMMMMMM0'\n//          '0MMMMMMMMMMMMMMMMMO.   .kMMMMMWl    ,KMMMMMK,     lWMMMMMM0,     .'.',;lkNMMMMMMMMMMMMMMM0'\n//          '0MMMMMMMMMMMMMMMMMO.   .kMMMMMWl    ,KMMMMMK,     lWMMMMMK;              ,kWMMMMMMMMMMMMM0'\n//          '0MMMMMMMMMMMMMMMMMO.   .kMMMMMWl    ,KMMMMMK,     lWMMMMX:    .:oxxdc'    .dWMMMMMMMMMMMM0'\n//          '0MMMMMMMMMMMMMMMMMO.   .kMMMMMWl    ,KMMMMMK,     lWMMMWd.   ,OWMMMMMXl.   '0MMMMMMMMMMMM0'\n//          '0MMMMMMMMMMMMMMMMMO.   .kMMMMMWl    ,KMMMMMK,     lWMMMX;   .kMMMMMMMMK,   .xMMMMMMMMMMMM0'\n//          '0MMMMMMMMMMMMMMMMMO.   .kMMMMMWl    ,KMMMMMK,     lWMMM0'   .OMMMMMMMMX;   .xMMMMMMMMMMMM0'\n//          .OMMMMMMMMMMMMMMMMMO.   .kMMMMMWl    ,KMMMMMK,     lWMMMK,    lNMMMMMMWx.   '0MMMMMMMMMMMMO.\n//           lNMMMMMMMMMMMMMMMMO.   .kMMMMMWl    ,KMMMMMK,     lWMMMWd.   .:x0KKKkc.   .dWMMMMMMMMMMMNl\n//      .    .c0WMMMMMMMMMMMMMMO.   .kMMMMMWo    ,KMMMMMK,     lWMMMMNd.     ....     .xNMMMMMMMMMMW0c.    .\n//      l      .,lddxxxxxxxxxxxc.    :xxxxxd,    .lxxxxxl.     ,dxxxxxd:.            .cdxxxxxxxxddl,.      l\n//      No.                                                                                              .oN\n//      MW0l'                                                                                          'l0WM\n//      MMMWKd;.                                                                                    .;dKWMMM\n//\n// // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // //\n//                                                                                                                                                                                  //\n//      @dev            ::              Aron Mauritala Ayuk                                                                                                                                          //\n//      @msg            ::              stereo@iii6.xyz                                                                                                                                   //\n//      @github         ::              @stereoIII6\n//      @twitter        ::              @stereoIII6                                                                                                                                              //\n//                                                                                                                                                                                  //\n// // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // //\n//                                                                                                                                                                                  //\n//      @dev            ::              Juan Xavier Valverde                                                                                                                                    //\n//      @msg            ::              juanxavier@iii6.xyz                                                                                                                               //\n//      @twitter        ::              @JuanXavier                                                                                                                                             //\n//      @github         ::              @JuanXavier                                                                                                                                             //\n//                                                                                                                                                                                  //                                                                                                                                                                                 //\n// // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // //\n//  *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   //\n// // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // //\n//                                                                                                                                                                                  //\n//      @company        ::              Fractio Holding                                                                                                                                                                       //\n//      @title          ::              iii6 Global Enums                                                                                                                           //\n//      @description    ::              Global Enum Library                                                                                                                           //\n//      @version        ::              0.0.1                                                                                                                                       //\n//      @purpose        ::              Enum Library                                                                                                          //\n//                                                                                                                                                                                  //\n//                                                                                                                                                                                  //\n//                                                                                                                                                                                  //\n//                                                                                                                                                                                  //\n//                                                                                                                                                                                  //\n// // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // //\n//  *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   //\n// // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // //\n\n/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////\n\n/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////\n\npragma solidity ^0.8.7;\n\ncontract iii6Proposals {\n    // ██╗███╗░░██╗██╗████████╗██╗░█████╗░██╗░░░░░██╗░██████╗░█████╗░████████╗██╗░█████╗░███╗░░██╗\n    // ██║████╗░██║██║╚══██╔══╝██║██╔══██╗██║░░░░░██║██╔════╝██╔══██╗╚══██╔══╝██║██╔══██╗████╗░██║\n    // ██║██╔██╗██║██║░░░██║░░░██║███████║██║░░░░░██║╚█████╗░███████║░░░██║░░░██║██║░░██║██╔██╗██║\n    // ██║██║╚████║██║░░░██║░░░██║██╔══██║██║░░░░░██║░╚═══██╗██╔══██║░░░██║░░░██║██║░░██║██║╚████║\n    // ██║██║░╚███║██║░░░██║░░░██║██║░░██║███████╗██║██████╔╝██║░░██║░░░██║░░░██║╚█████╔╝██║░╚███║\n    // ╚═╝╚═╝░░╚══╝╚═╝░░░╚═╝░░░╚═╝╚═╝░░╚═╝╚══════╝╚═╝╚═════╝░╚═╝░░╚═╝░░░╚═╝░░░╚═╝░╚════╝░╚═╝░░╚══╝\n\n    // user relation states\n    enum Voting {\n        Active,\n        Canceled,\n        Approved\n    }\n\n    struct Proposal {\n        uint256 rid;\n        uint256 voteCount;\n        address[] members;\n        uint256[] shares;\n        int256[] difs;\n        bool[] votes;\n        Voting state;\n    }\n}\n// // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // //\n//\n//      MMWKd:..                                                                                    ..:dKWMM\n//      MKl.                                                                                            .lKW\n//      O'       ..''''''''''''.     .''''''.     .'''''.      .''''''''''''''.     .''''''''''''..       'O\n//      '     .ckKNNWNWWWWWWWWWk.   .xNWWNWNl    ,0WWWWW0,     lNWWWWWWWWWNWNk'    ;0NNNWWWWWWWWNNKkc.     '\n//           ,OWMMMMMMMMMMMMMMMO.   .kMMMMMWl    ,KMMMMMK,     lWMMMMMMMMMMM0,    ;KMMMMMMMMMMMMMMMMWO,\n//          .kMMMMMMMMMMMMMMMMMO.   .kMMMMMWl    ,KMMMMMK,     lWMMMMMMMMMM0,    ;KMMMMMMMMMMMMMMMMMMMk.\n//          '0MMMMMMMMMMMMMMMMMO.   .kMMMMMWl    ,KMMMMMK,     lWMMMMMMMMM0,    :KMMMMMMMMMMMMMMMMMMMM0'\n//          '0MMMMMMMMMMMMMMMMMO.   .kMMMMMWl    ,KMMMMMK,     lWMMMMMMMM0,    :KMMMMMMMMMMMMMMMMMMMMM0'\n//          '0MMMMMMMMMMMMMMMMMO.   .kMMMMMWl    ,KMMMMMK,     lWMMMMMMM0,    ;0NNWWMMMMMMMMMMMMMMMMMM0'\n//          '0MMMMMMMMMMMMMMMMMO.   .kMMMMMWl    ,KMMMMMK,     lWMMMMMM0,     .'.',;lkNMMMMMMMMMMMMMMM0'\n//          '0MMMMMMMMMMMMMMMMMO.   .kMMMMMWl    ,KMMMMMK,     lWMMMMMK;              ,kWMMMMMMMMMMMMM0'\n//          '0MMMMMMMMMMMMMMMMMO.   .kMMMMMWl    ,KMMMMMK,     lWMMMMX:    .:oxxdc'    .dWMMMMMMMMMMMM0'\n//          '0MMMMMMMMMMMMMMMMMO.   .kMMMMMWl    ,KMMMMMK,     lWMMMWd.   ,OWMMMMMXl.   '0MMMMMMMMMMMM0'\n//          '0MMMMMMMMMMMMMMMMMO.   .kMMMMMWl    ,KMMMMMK,     lWMMMX;   .kMMMMMMMMK,   .xMMMMMMMMMMMM0'\n//          '0MMMMMMMMMMMMMMMMMO.   .kMMMMMWl    ,KMMMMMK,     lWMMM0'   .OMMMMMMMMX;   .xMMMMMMMMMMMM0'\n//          .OMMMMMMMMMMMMMMMMMO.   .kMMMMMWl    ,KMMMMMK,     lWMMMK,    lNMMMMMMWx.   '0MMMMMMMMMMMMO.\n//           lNMMMMMMMMMMMMMMMMO.   .kMMMMMWl    ,KMMMMMK,     lWMMMWd.   .:x0KKKkc.   .dWMMMMMMMMMMMNl\n//      .    .c0WMMMMMMMMMMMMMMO.   .kMMMMMWo    ,KMMMMMK,     lWMMMMNd.     ....     .xNMMMMMMMMMMW0c.    .\n//      l      .,lddxxxxxxxxxxxc.    :xxxxxd,    .lxxxxxl.     ,dxxxxxd:.            .cdxxxxxxxxddl,.      l\n//      No.                                                                                              .oN\n//      MW0l'                                                                                          'l0WM\n//      MMMWKd;.                                                                                    .;dKWMMM\n//\n// // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // //\n",
   "sourcePath": "/Users/iii6/Documents/GitHub/iii6v2/iii6v2/contracts/iii6utils/Misc/iii6Proposals.sol",
   "ast": {
     "absolutePath": "project:/contracts/iii6utils/Misc/iii6Proposals.sol",
     "exportedSymbols": {
       "iii6Proposals": [
-        8406
+        8439
       ]
     },
-    "id": 8407,
+    "id": 8440,
     "license": "GPL-3.0",
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 8381,
+        "id": 8414,
         "literals": [
           "solidity",
           "^",
@@ -31,7 +31,7 @@
           ".7"
         ],
         "nodeType": "PragmaDirective",
-        "src": "8629:23:59"
+        "src": "8629:23:60"
       },
       {
         "abstract": false,
@@ -40,58 +40,58 @@
         "contractDependencies": [],
         "contractKind": "contract",
         "fullyImplemented": true,
-        "id": 8406,
+        "id": 8439,
         "linearizedBaseContracts": [
-          8406
+          8439
         ],
         "name": "iii6Proposals",
-        "nameLocation": "8663:13:59",
+        "nameLocation": "8663:13:60",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "canonicalName": "iii6Proposals.Voting",
-            "id": 8385,
+            "id": 8418,
             "members": [
               {
-                "id": 8382,
+                "id": 8415,
                 "name": "Active",
-                "nameLocation": "10420:6:59",
+                "nameLocation": "10420:6:60",
                 "nodeType": "EnumValue",
-                "src": "10420:6:59"
+                "src": "10420:6:60"
               },
               {
-                "id": 8383,
+                "id": 8416,
                 "name": "Canceled",
-                "nameLocation": "10436:8:59",
+                "nameLocation": "10436:8:60",
                 "nodeType": "EnumValue",
-                "src": "10436:8:59"
+                "src": "10436:8:60"
               },
               {
-                "id": 8384,
+                "id": 8417,
                 "name": "Approved",
-                "nameLocation": "10454:8:59",
+                "nameLocation": "10454:8:60",
                 "nodeType": "EnumValue",
-                "src": "10454:8:59"
+                "src": "10454:8:60"
               }
             ],
             "name": "Voting",
-            "nameLocation": "10403:6:59",
+            "nameLocation": "10403:6:60",
             "nodeType": "EnumDefinition",
-            "src": "10398:70:59"
+            "src": "10398:70:60"
           },
           {
             "canonicalName": "iii6Proposals.Proposal",
-            "id": 8405,
+            "id": 8438,
             "members": [
               {
                 "constant": false,
-                "id": 8387,
+                "id": 8420,
                 "mutability": "mutable",
                 "name": "rid",
-                "nameLocation": "10508:3:59",
+                "nameLocation": "10508:3:60",
                 "nodeType": "VariableDeclaration",
-                "scope": 8405,
-                "src": "10500:11:59",
+                "scope": 8438,
+                "src": "10500:11:60",
                 "stateVariable": false,
                 "storageLocation": "default",
                 "typeDescriptions": {
@@ -99,10 +99,10 @@
                   "typeString": "uint256"
                 },
                 "typeName": {
-                  "id": 8386,
+                  "id": 8419,
                   "name": "uint256",
                   "nodeType": "ElementaryTypeName",
-                  "src": "10500:7:59",
+                  "src": "10500:7:60",
                   "typeDescriptions": {
                     "typeIdentifier": "t_uint256",
                     "typeString": "uint256"
@@ -112,13 +112,13 @@
               },
               {
                 "constant": false,
-                "id": 8389,
+                "id": 8422,
                 "mutability": "mutable",
                 "name": "voteCount",
-                "nameLocation": "10529:9:59",
+                "nameLocation": "10529:9:60",
                 "nodeType": "VariableDeclaration",
-                "scope": 8405,
-                "src": "10521:17:59",
+                "scope": 8438,
+                "src": "10521:17:60",
                 "stateVariable": false,
                 "storageLocation": "default",
                 "typeDescriptions": {
@@ -126,10 +126,10 @@
                   "typeString": "uint256"
                 },
                 "typeName": {
-                  "id": 8388,
+                  "id": 8421,
                   "name": "uint256",
                   "nodeType": "ElementaryTypeName",
-                  "src": "10521:7:59",
+                  "src": "10521:7:60",
                   "typeDescriptions": {
                     "typeIdentifier": "t_uint256",
                     "typeString": "uint256"
@@ -139,13 +139,13 @@
               },
               {
                 "constant": false,
-                "id": 8392,
+                "id": 8425,
                 "mutability": "mutable",
                 "name": "members",
-                "nameLocation": "10558:7:59",
+                "nameLocation": "10558:7:60",
                 "nodeType": "VariableDeclaration",
-                "scope": 8405,
-                "src": "10548:17:59",
+                "scope": 8438,
+                "src": "10548:17:60",
                 "stateVariable": false,
                 "storageLocation": "default",
                 "typeDescriptions": {
@@ -154,19 +154,19 @@
                 },
                 "typeName": {
                   "baseType": {
-                    "id": 8390,
+                    "id": 8423,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "10548:7:59",
+                    "src": "10548:7:60",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
                       "typeString": "address"
                     }
                   },
-                  "id": 8391,
+                  "id": 8424,
                   "nodeType": "ArrayTypeName",
-                  "src": "10548:9:59",
+                  "src": "10548:9:60",
                   "typeDescriptions": {
                     "typeIdentifier": "t_array$_t_address_$dyn_storage_ptr",
                     "typeString": "address[]"
@@ -176,13 +176,13 @@
               },
               {
                 "constant": false,
-                "id": 8395,
+                "id": 8428,
                 "mutability": "mutable",
                 "name": "shares",
-                "nameLocation": "10585:6:59",
+                "nameLocation": "10585:6:60",
                 "nodeType": "VariableDeclaration",
-                "scope": 8405,
-                "src": "10575:16:59",
+                "scope": 8438,
+                "src": "10575:16:60",
                 "stateVariable": false,
                 "storageLocation": "default",
                 "typeDescriptions": {
@@ -191,18 +191,18 @@
                 },
                 "typeName": {
                   "baseType": {
-                    "id": 8393,
+                    "id": 8426,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "10575:7:59",
+                    "src": "10575:7:60",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
                     }
                   },
-                  "id": 8394,
+                  "id": 8427,
                   "nodeType": "ArrayTypeName",
-                  "src": "10575:9:59",
+                  "src": "10575:9:60",
                   "typeDescriptions": {
                     "typeIdentifier": "t_array$_t_uint256_$dyn_storage_ptr",
                     "typeString": "uint256[]"
@@ -212,13 +212,13 @@
               },
               {
                 "constant": false,
-                "id": 8398,
+                "id": 8431,
                 "mutability": "mutable",
                 "name": "difs",
-                "nameLocation": "10610:4:59",
+                "nameLocation": "10610:4:60",
                 "nodeType": "VariableDeclaration",
-                "scope": 8405,
-                "src": "10601:13:59",
+                "scope": 8438,
+                "src": "10601:13:60",
                 "stateVariable": false,
                 "storageLocation": "default",
                 "typeDescriptions": {
@@ -227,18 +227,18 @@
                 },
                 "typeName": {
                   "baseType": {
-                    "id": 8396,
+                    "id": 8429,
                     "name": "int256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "10601:6:59",
+                    "src": "10601:6:60",
                     "typeDescriptions": {
                       "typeIdentifier": "t_int256",
                       "typeString": "int256"
                     }
                   },
-                  "id": 8397,
+                  "id": 8430,
                   "nodeType": "ArrayTypeName",
-                  "src": "10601:8:59",
+                  "src": "10601:8:60",
                   "typeDescriptions": {
                     "typeIdentifier": "t_array$_t_int256_$dyn_storage_ptr",
                     "typeString": "int256[]"
@@ -248,13 +248,13 @@
               },
               {
                 "constant": false,
-                "id": 8401,
+                "id": 8434,
                 "mutability": "mutable",
                 "name": "votes",
-                "nameLocation": "10631:5:59",
+                "nameLocation": "10631:5:60",
                 "nodeType": "VariableDeclaration",
-                "scope": 8405,
-                "src": "10624:12:59",
+                "scope": 8438,
+                "src": "10624:12:60",
                 "stateVariable": false,
                 "storageLocation": "default",
                 "typeDescriptions": {
@@ -263,18 +263,18 @@
                 },
                 "typeName": {
                   "baseType": {
-                    "id": 8399,
+                    "id": 8432,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
-                    "src": "10624:4:59",
+                    "src": "10624:4:60",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
                     }
                   },
-                  "id": 8400,
+                  "id": 8433,
                   "nodeType": "ArrayTypeName",
-                  "src": "10624:6:59",
+                  "src": "10624:6:60",
                   "typeDescriptions": {
                     "typeIdentifier": "t_array$_t_bool_$dyn_storage_ptr",
                     "typeString": "bool[]"
@@ -284,36 +284,36 @@
               },
               {
                 "constant": false,
-                "id": 8404,
+                "id": 8437,
                 "mutability": "mutable",
                 "name": "state",
-                "nameLocation": "10653:5:59",
+                "nameLocation": "10653:5:60",
                 "nodeType": "VariableDeclaration",
-                "scope": 8405,
-                "src": "10646:12:59",
+                "scope": 8438,
+                "src": "10646:12:60",
                 "stateVariable": false,
                 "storageLocation": "default",
                 "typeDescriptions": {
-                  "typeIdentifier": "t_enum$_Voting_$8385",
+                  "typeIdentifier": "t_enum$_Voting_$8418",
                   "typeString": "enum iii6Proposals.Voting"
                 },
                 "typeName": {
-                  "id": 8403,
+                  "id": 8436,
                   "nodeType": "UserDefinedTypeName",
                   "pathNode": {
-                    "id": 8402,
+                    "id": 8435,
                     "name": "Voting",
                     "nameLocations": [
-                      "10646:6:59"
+                      "10646:6:60"
                     ],
                     "nodeType": "IdentifierPath",
-                    "referencedDeclaration": 8385,
-                    "src": "10646:6:59"
+                    "referencedDeclaration": 8418,
+                    "src": "10646:6:60"
                   },
-                  "referencedDeclaration": 8385,
-                  "src": "10646:6:59",
+                  "referencedDeclaration": 8418,
+                  "src": "10646:6:60",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_enum$_Voting_$8385",
+                    "typeIdentifier": "t_enum$_Voting_$8418",
                     "typeString": "enum iii6Proposals.Voting"
                   }
                 },
@@ -321,20 +321,20 @@
               }
             ],
             "name": "Proposal",
-            "nameLocation": "10481:8:59",
+            "nameLocation": "10481:8:60",
             "nodeType": "StructDefinition",
-            "scope": 8406,
-            "src": "10474:191:59",
+            "scope": 8439,
+            "src": "10474:191:60",
             "visibility": "public"
           }
         ],
-        "scope": 8407,
-        "src": "8654:2013:59",
+        "scope": 8440,
+        "src": "8654:2013:60",
         "usedErrors": [],
         "usedEvents": []
       }
     ],
-    "src": "8629:4755:59"
+    "src": "8629:4755:60"
   },
   "compiler": {
     "name": "solc",
@@ -342,7 +342,7 @@
   },
   "networks": {},
   "schemaVersion": "3.4.16",
-  "updatedAt": "2023-11-30T04:01:16.801Z",
+  "updatedAt": "2023-12-02T01:32:19.268Z",
   "devdoc": {
     "kind": "dev",
     "methods": {},

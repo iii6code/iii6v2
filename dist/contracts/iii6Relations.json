@@ -7,23 +7,23 @@
   "immutableReferences": {},
   "generatedSources": [],
   "deployedGeneratedSources": [],
-  "sourceMap": "8654:3912:60:-:0;;;;;;;;;;;;;;;;;;;",
-  "deployedSourceMap": "8654:3912:60:-:0;;;;;",
+  "sourceMap": "8654:3912:61:-:0;;;;;;;;;;;;;;;;;;;",
+  "deployedSourceMap": "8654:3912:61:-:0;;;;;",
   "source": "// SPDX-License-Identifier: GPL-3.0\n// // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // //\n//\n//      MMWKd:..                                                                                    ..:dKWMM\n//      MKl.                                                                                            .lKW\n//      O'       ..''''''''''''.     .''''''.     .'''''.      .''''''''''''''.     .''''''''''''..       'O\n//      '     .ckKNNWNWWWWWWWWWk.   .xNWWNWNl    ,0WWWWW0,     lNWWWWWWWWWNWNk'    ;0NNNWWWWWWWWNNKkc.     '\n//           ,OWMMMMMMMMMMMMMMMO.   .kMMMMMWl    ,KMMMMMK,     lWMMMMMMMMMMM0,    ;KMMMMMMMMMMMMMMMMWO,\n//          .kMMMMMMMMMMMMMMMMMO.   .kMMMMMWl    ,KMMMMMK,     lWMMMMMMMMMM0,    ;KMMMMMMMMMMMMMMMMMMMk.\n//          '0MMMMMMMMMMMMMMMMMO.   .kMMMMMWl    ,KMMMMMK,     lWMMMMMMMMM0,    :KMMMMMMMMMMMMMMMMMMMM0'\n//          '0MMMMMMMMMMMMMMMMMO.   .kMMMMMWl    ,KMMMMMK,     lWMMMMMMMM0,    :KMMMMMMMMMMMMMMMMMMMMM0'\n//          '0MMMMMMMMMMMMMMMMMO.   .kMMMMMWl    ,KMMMMMK,     lWMMMMMMM0,    ;0NNWWMMMMMMMMMMMMMMMMMM0'\n//          '0MMMMMMMMMMMMMMMMMO.   .kMMMMMWl    ,KMMMMMK,     lWMMMMMM0,     .'.',;lkNMMMMMMMMMMMMMMM0'\n//          '0MMMMMMMMMMMMMMMMMO.   .kMMMMMWl    ,KMMMMMK,     lWMMMMMK;              ,kWMMMMMMMMMMMMM0'\n//          '0MMMMMMMMMMMMMMMMMO.   .kMMMMMWl    ,KMMMMMK,     lWMMMMX:    .:oxxdc'    .dWMMMMMMMMMMMM0'\n//          '0MMMMMMMMMMMMMMMMMO.   .kMMMMMWl    ,KMMMMMK,     lWMMMWd.   ,OWMMMMMXl.   '0MMMMMMMMMMMM0'\n//          '0MMMMMMMMMMMMMMMMMO.   .kMMMMMWl    ,KMMMMMK,     lWMMMX;   .kMMMMMMMMK,   .xMMMMMMMMMMMM0'\n//          '0MMMMMMMMMMMMMMMMMO.   .kMMMMMWl    ,KMMMMMK,     lWMMM0'   .OMMMMMMMMX;   .xMMMMMMMMMMMM0'\n//          .OMMMMMMMMMMMMMMMMMO.   .kMMMMMWl    ,KMMMMMK,     lWMMMK,    lNMMMMMMWx.   '0MMMMMMMMMMMMO.\n//           lNMMMMMMMMMMMMMMMMO.   .kMMMMMWl    ,KMMMMMK,     lWMMMWd.   .:x0KKKkc.   .dWMMMMMMMMMMMNl\n//      .    .c0WMMMMMMMMMMMMMMO.   .kMMMMMWo    ,KMMMMMK,     lWMMMMNd.     ....     .xNMMMMMMMMMMW0c.    .\n//      l      .,lddxxxxxxxxxxxc.    :xxxxxd,    .lxxxxxl.     ,dxxxxxd:.            .cdxxxxxxxxddl,.      l\n//      No.                                                                                              .oN\n//      MW0l'                                                                                          'l0WM\n//      MMMWKd;.                                                                                    .;dKWMMM\n//\n// // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // //\n//                                                                                                                                                                                  //\n//      @dev            ::              Aron Mauritala Ayuk                                                                                                                                          //\n//      @msg            ::              stereo@iii6.xyz                                                                                                                                   //\n//      @github         ::              @stereoIII6\n//      @twitter        ::              @stereoIII6                                                                                                                                              //\n//                                                                                                                                                                                  //\n// // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // //\n//                                                                                                                                                                                  //\n//      @dev            ::              Juan Xavier Valverde                                                                                                                                    //\n//      @msg            ::              juanxavier@iii6.xyz                                                                                                                               //\n//      @twitter        ::              @JuanXavier                                                                                                                                             //\n//      @github         ::              @JuanXavier                                                                                                                                             //\n//                                                                                                                                                                                  //                                                                                                                                                                                 //\n// // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // //\n//  *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   //\n// // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // //\n//                                                                                                                                                                                  //\n//      @company        ::              Fractio Holding                                                                                                                                                                       //\n//      @title          ::              iii6 Global Enums                                                                                                                           //\n//      @description    ::              Global Enum Library                                                                                                                           //\n//      @version        ::              0.0.1                                                                                                                                       //\n//      @purpose        ::              Enum Library                                                                                                          //\n//                                                                                                                                                                                  //\n//                                                                                                                                                                                  //\n//                                                                                                                                                                                  //\n//                                                                                                                                                                                  //\n//                                                                                                                                                                                  //\n// // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // //\n//  *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   //\n// // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // //\n\n/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////\n\n/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////\n\npragma solidity ^0.8.7;\n\ncontract iii6Relations {\n    // ██╗███╗░░██╗██╗████████╗██╗░█████╗░██╗░░░░░██╗░██████╗░█████╗░████████╗██╗░█████╗░███╗░░██╗\n    // ██║████╗░██║██║╚══██╔══╝██║██╔══██╗██║░░░░░██║██╔════╝██╔══██╗╚══██╔══╝██║██╔══██╗████╗░██║\n    // ██║██╔██╗██║██║░░░██║░░░██║███████║██║░░░░░██║╚█████╗░███████║░░░██║░░░██║██║░░██║██╔██╗██║\n    // ██║██║╚████║██║░░░██║░░░██║██╔══██║██║░░░░░██║░╚═══██╗██╔══██║░░░██║░░░██║██║░░██║██║╚████║\n    // ██║██║░╚███║██║░░░██║░░░██║██║░░██║███████╗██║██████╔╝██║░░██║░░░██║░░░██║╚█████╔╝██║░╚███║\n    // ╚═╝╚═╝░░╚══╝╚═╝░░░╚═╝░░░╚═╝╚═╝░░╚═╝╚══════╝╚═╝╚═════╝░╚═╝░░╚═╝░░░╚═╝░░░╚═╝░╚════╝░╚═╝░░╚══╝\n    /*\n     * @dev Divides between two values substracting the remainder from the dividend\n     * @param _a First value\n     * @param _b Second value\n     * @return Result of division\n     */\n    // role enum\n    enum Roles {\n        Unknown,\n        Foreign,\n        Known,\n        Member,\n        Advertiser,\n        Creator,\n        Moderator,\n        Admin\n    }\n    /**\n     * @dev explanation of group types\n     * @param Face To Face is for 2 users only private invisible and encrypted\n     * @param Private is a invisible private group for multiple users\n     * @param Closed is a invisible group with password access\n     * @param Shared is a Private Group Friends can Invite other Friends into\n     * @param Public is a publicly visible group every user can apply for\n     * @param Open groups are visible and accessible by everyone\n     */\n    enum GroupType {\n        FaceToFace,\n        Private,\n        Closed,\n        Shared,\n        Public,\n        Open\n    }\n    /**\n     * @dev explanation of group types\n     * @param Member known wallet address with profile data with no relation to ref user\n     * @param FriendsFriend member with a relation to at least one of ref users friends\n     * @param Friend member privacy status that allows basic access it is the default friendship state\n     * @param Family member biologically or emotionally related\n     * @param Work member related through work or profession\n     * @param Homies member that is a close private friend\n     * @param Partners member that user trusts 100% and can recover user account\n     * @param Blocked member that is removed from user feed for ref user and vice versa\n     */\n    enum Relation {\n        Member,\n        FriendsFriend,\n        Friend,\n        Family,\n        Work,\n        Homies,\n        Partners,\n        Blocked,\n        Banned\n    }\n    struct Relations {\n        uint256 id;\n        bool AfollowsB;\n        bool BfollowsA;\n        bool AbansB;\n        bool BbansA;\n        bool AallowsBmsg;\n        bool BallowsAmsg;\n        Relation AprivB;\n        Relation BprivA;\n    }\n    struct BoardMember {\n        uint256 b_id;\n        address adr;\n        uint256 share;\n        string info;\n    }\n}\n// // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // //\n//\n//      MMWKd:..                                                                                    ..:dKWMM\n//      MKl.                                                                                            .lKW\n//      O'       ..''''''''''''.     .''''''.     .'''''.      .''''''''''''''.     .''''''''''''..       'O\n//      '     .ckKNNWNWWWWWWWWWk.   .xNWWNWNl    ,0WWWWW0,     lNWWWWWWWWWNWNk'    ;0NNNWWWWWWWWNNKkc.     '\n//           ,OWMMMMMMMMMMMMMMMO.   .kMMMMMWl    ,KMMMMMK,     lWMMMMMMMMMMM0,    ;KMMMMMMMMMMMMMMMMWO,\n//          .kMMMMMMMMMMMMMMMMMO.   .kMMMMMWl    ,KMMMMMK,     lWMMMMMMMMMM0,    ;KMMMMMMMMMMMMMMMMMMMk.\n//          '0MMMMMMMMMMMMMMMMMO.   .kMMMMMWl    ,KMMMMMK,     lWMMMMMMMMM0,    :KMMMMMMMMMMMMMMMMMMMM0'\n//          '0MMMMMMMMMMMMMMMMMO.   .kMMMMMWl    ,KMMMMMK,     lWMMMMMMMM0,    :KMMMMMMMMMMMMMMMMMMMMM0'\n//          '0MMMMMMMMMMMMMMMMMO.   .kMMMMMWl    ,KMMMMMK,     lWMMMMMMM0,    ;0NNWWMMMMMMMMMMMMMMMMMM0'\n//          '0MMMMMMMMMMMMMMMMMO.   .kMMMMMWl    ,KMMMMMK,     lWMMMMMM0,     .'.',;lkNMMMMMMMMMMMMMMM0'\n//          '0MMMMMMMMMMMMMMMMMO.   .kMMMMMWl    ,KMMMMMK,     lWMMMMMK;              ,kWMMMMMMMMMMMMM0'\n//          '0MMMMMMMMMMMMMMMMMO.   .kMMMMMWl    ,KMMMMMK,     lWMMMMX:    .:oxxdc'    .dWMMMMMMMMMMMM0'\n//          '0MMMMMMMMMMMMMMMMMO.   .kMMMMMWl    ,KMMMMMK,     lWMMMWd.   ,OWMMMMMXl.   '0MMMMMMMMMMMM0'\n//          '0MMMMMMMMMMMMMMMMMO.   .kMMMMMWl    ,KMMMMMK,     lWMMMX;   .kMMMMMMMMK,   .xMMMMMMMMMMMM0'\n//          '0MMMMMMMMMMMMMMMMMO.   .kMMMMMWl    ,KMMMMMK,     lWMMM0'   .OMMMMMMMMX;   .xMMMMMMMMMMMM0'\n//          .OMMMMMMMMMMMMMMMMMO.   .kMMMMMWl    ,KMMMMMK,     lWMMMK,    lNMMMMMMWx.   '0MMMMMMMMMMMMO.\n//           lNMMMMMMMMMMMMMMMMO.   .kMMMMMWl    ,KMMMMMK,     lWMMMWd.   .:x0KKKkc.   .dWMMMMMMMMMMMNl\n//      .    .c0WMMMMMMMMMMMMMMO.   .kMMMMMWo    ,KMMMMMK,     lWMMMMNd.     ....     .xNMMMMMMMMMMW0c.    .\n//      l      .,lddxxxxxxxxxxxc.    :xxxxxd,    .lxxxxxl.     ,dxxxxxd:.            .cdxxxxxxxxddl,.      l\n//      No.                                                                                              .oN\n//      MW0l'                                                                                          'l0WM\n//      MMMWKd;.                                                                                    .;dKWMMM\n//\n// // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // //\n",
   "sourcePath": "/Users/iii6/Documents/GitHub/iii6v2/iii6v2/contracts/iii6utils/Misc/iii6Relations.sol",
   "ast": {
     "absolutePath": "project:/contracts/iii6utils/Misc/iii6Relations.sol",
     "exportedSymbols": {
       "iii6Relations": [
-        8467
+        8500
       ]
     },
-    "id": 8468,
+    "id": 8501,
     "license": "GPL-3.0",
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 8408,
+        "id": 8441,
         "literals": [
           "solidity",
           "^",
@@ -31,7 +31,7 @@
           ".7"
         ],
         "nodeType": "PragmaDirective",
-        "src": "8629:23:60"
+        "src": "8629:23:61"
       },
       {
         "abstract": false,
@@ -40,230 +40,230 @@
         "contractDependencies": [],
         "contractKind": "contract",
         "fullyImplemented": true,
-        "id": 8467,
+        "id": 8500,
         "linearizedBaseContracts": [
-          8467
+          8500
         ],
         "name": "iii6Relations",
-        "nameLocation": "8663:13:60",
+        "nameLocation": "8663:13:61",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "canonicalName": "iii6Relations.Roles",
-            "id": 8417,
+            "id": 8450,
             "members": [
               {
-                "id": 8409,
+                "id": 8442,
                 "name": "Unknown",
-                "nameLocation": "10599:7:60",
+                "nameLocation": "10599:7:61",
                 "nodeType": "EnumValue",
-                "src": "10599:7:60"
+                "src": "10599:7:61"
               },
               {
-                "id": 8410,
+                "id": 8443,
                 "name": "Foreign",
-                "nameLocation": "10616:7:60",
+                "nameLocation": "10616:7:61",
                 "nodeType": "EnumValue",
-                "src": "10616:7:60"
+                "src": "10616:7:61"
               },
               {
-                "id": 8411,
+                "id": 8444,
                 "name": "Known",
-                "nameLocation": "10633:5:60",
+                "nameLocation": "10633:5:61",
                 "nodeType": "EnumValue",
-                "src": "10633:5:60"
+                "src": "10633:5:61"
               },
               {
-                "id": 8412,
+                "id": 8445,
                 "name": "Member",
-                "nameLocation": "10648:6:60",
+                "nameLocation": "10648:6:61",
                 "nodeType": "EnumValue",
-                "src": "10648:6:60"
+                "src": "10648:6:61"
               },
               {
-                "id": 8413,
+                "id": 8446,
                 "name": "Advertiser",
-                "nameLocation": "10664:10:60",
+                "nameLocation": "10664:10:61",
                 "nodeType": "EnumValue",
-                "src": "10664:10:60"
+                "src": "10664:10:61"
               },
               {
-                "id": 8414,
+                "id": 8447,
                 "name": "Creator",
-                "nameLocation": "10684:7:60",
+                "nameLocation": "10684:7:61",
                 "nodeType": "EnumValue",
-                "src": "10684:7:60"
+                "src": "10684:7:61"
               },
               {
-                "id": 8415,
+                "id": 8448,
                 "name": "Moderator",
-                "nameLocation": "10701:9:60",
+                "nameLocation": "10701:9:61",
                 "nodeType": "EnumValue",
-                "src": "10701:9:60"
+                "src": "10701:9:61"
               },
               {
-                "id": 8416,
+                "id": 8449,
                 "name": "Admin",
-                "nameLocation": "10720:5:60",
+                "nameLocation": "10720:5:61",
                 "nodeType": "EnumValue",
-                "src": "10720:5:60"
+                "src": "10720:5:61"
               }
             ],
             "name": "Roles",
-            "nameLocation": "10583:5:60",
+            "nameLocation": "10583:5:61",
             "nodeType": "EnumDefinition",
-            "src": "10578:153:60"
+            "src": "10578:153:61"
           },
           {
             "canonicalName": "iii6Relations.GroupType",
             "documentation": {
-              "id": 8418,
+              "id": 8451,
               "nodeType": "StructuredDocumentation",
-              "src": "10736:479:60",
+              "src": "10736:479:61",
               "text": " @dev explanation of group types\n @param Face To Face is for 2 users only private invisible and encrypted\n @param Private is a invisible private group for multiple users\n @param Closed is a invisible group with password access\n @param Shared is a Private Group Friends can Invite other Friends into\n @param Public is a publicly visible group every user can apply for\n @param Open groups are visible and accessible by everyone"
             },
-            "id": 8425,
+            "id": 8458,
             "members": [
               {
-                "id": 8419,
+                "id": 8452,
                 "name": "FaceToFace",
-                "nameLocation": "11245:10:60",
+                "nameLocation": "11245:10:61",
                 "nodeType": "EnumValue",
-                "src": "11245:10:60"
+                "src": "11245:10:61"
               },
               {
-                "id": 8420,
+                "id": 8453,
                 "name": "Private",
-                "nameLocation": "11265:7:60",
+                "nameLocation": "11265:7:61",
                 "nodeType": "EnumValue",
-                "src": "11265:7:60"
+                "src": "11265:7:61"
               },
               {
-                "id": 8421,
+                "id": 8454,
                 "name": "Closed",
-                "nameLocation": "11282:6:60",
+                "nameLocation": "11282:6:61",
                 "nodeType": "EnumValue",
-                "src": "11282:6:60"
+                "src": "11282:6:61"
               },
               {
-                "id": 8422,
+                "id": 8455,
                 "name": "Shared",
-                "nameLocation": "11298:6:60",
+                "nameLocation": "11298:6:61",
                 "nodeType": "EnumValue",
-                "src": "11298:6:60"
+                "src": "11298:6:61"
               },
               {
-                "id": 8423,
+                "id": 8456,
                 "name": "Public",
-                "nameLocation": "11314:6:60",
+                "nameLocation": "11314:6:61",
                 "nodeType": "EnumValue",
-                "src": "11314:6:60"
+                "src": "11314:6:61"
               },
               {
-                "id": 8424,
+                "id": 8457,
                 "name": "Open",
-                "nameLocation": "11330:4:60",
+                "nameLocation": "11330:4:61",
                 "nodeType": "EnumValue",
-                "src": "11330:4:60"
+                "src": "11330:4:61"
               }
             ],
             "name": "GroupType",
-            "nameLocation": "11225:9:60",
+            "nameLocation": "11225:9:61",
             "nodeType": "EnumDefinition",
-            "src": "11220:120:60"
+            "src": "11220:120:61"
           },
           {
             "canonicalName": "iii6Relations.Relation",
             "documentation": {
-              "id": 8426,
+              "id": 8459,
               "nodeType": "StructuredDocumentation",
-              "src": "11345:683:60",
+              "src": "11345:683:61",
               "text": " @dev explanation of group types\n @param Member known wallet address with profile data with no relation to ref user\n @param FriendsFriend member with a relation to at least one of ref users friends\n @param Friend member privacy status that allows basic access it is the default friendship state\n @param Family member biologically or emotionally related\n @param Work member related through work or profession\n @param Homies member that is a close private friend\n @param Partners member that user trusts 100% and can recover user account\n @param Blocked member that is removed from user feed for ref user and vice versa"
             },
-            "id": 8436,
+            "id": 8469,
             "members": [
               {
-                "id": 8427,
+                "id": 8460,
                 "name": "Member",
-                "nameLocation": "12057:6:60",
+                "nameLocation": "12057:6:61",
                 "nodeType": "EnumValue",
-                "src": "12057:6:60"
+                "src": "12057:6:61"
               },
               {
-                "id": 8428,
+                "id": 8461,
                 "name": "FriendsFriend",
-                "nameLocation": "12073:13:60",
+                "nameLocation": "12073:13:61",
                 "nodeType": "EnumValue",
-                "src": "12073:13:60"
+                "src": "12073:13:61"
               },
               {
-                "id": 8429,
+                "id": 8462,
                 "name": "Friend",
-                "nameLocation": "12096:6:60",
+                "nameLocation": "12096:6:61",
                 "nodeType": "EnumValue",
-                "src": "12096:6:60"
+                "src": "12096:6:61"
               },
               {
-                "id": 8430,
+                "id": 8463,
                 "name": "Family",
-                "nameLocation": "12112:6:60",
+                "nameLocation": "12112:6:61",
                 "nodeType": "EnumValue",
-                "src": "12112:6:60"
+                "src": "12112:6:61"
               },
               {
-                "id": 8431,
+                "id": 8464,
                 "name": "Work",
-                "nameLocation": "12128:4:60",
+                "nameLocation": "12128:4:61",
                 "nodeType": "EnumValue",
-                "src": "12128:4:60"
+                "src": "12128:4:61"
               },
               {
-                "id": 8432,
+                "id": 8465,
                 "name": "Homies",
-                "nameLocation": "12142:6:60",
+                "nameLocation": "12142:6:61",
                 "nodeType": "EnumValue",
-                "src": "12142:6:60"
+                "src": "12142:6:61"
               },
               {
-                "id": 8433,
+                "id": 8466,
                 "name": "Partners",
-                "nameLocation": "12158:8:60",
+                "nameLocation": "12158:8:61",
                 "nodeType": "EnumValue",
-                "src": "12158:8:60"
+                "src": "12158:8:61"
               },
               {
-                "id": 8434,
+                "id": 8467,
                 "name": "Blocked",
-                "nameLocation": "12176:7:60",
+                "nameLocation": "12176:7:61",
                 "nodeType": "EnumValue",
-                "src": "12176:7:60"
+                "src": "12176:7:61"
               },
               {
-                "id": 8435,
+                "id": 8468,
                 "name": "Banned",
-                "nameLocation": "12193:6:60",
+                "nameLocation": "12193:6:61",
                 "nodeType": "EnumValue",
-                "src": "12193:6:60"
+                "src": "12193:6:61"
               }
             ],
             "name": "Relation",
-            "nameLocation": "12038:8:60",
+            "nameLocation": "12038:8:61",
             "nodeType": "EnumDefinition",
-            "src": "12033:172:60"
+            "src": "12033:172:61"
           },
           {
             "canonicalName": "iii6Relations.Relations",
-            "id": 8457,
+            "id": 8490,
             "members": [
               {
                 "constant": false,
-                "id": 8438,
+                "id": 8471,
                 "mutability": "mutable",
                 "name": "id",
-                "nameLocation": "12245:2:60",
+                "nameLocation": "12245:2:61",
                 "nodeType": "VariableDeclaration",
-                "scope": 8457,
-                "src": "12237:10:60",
+                "scope": 8490,
+                "src": "12237:10:61",
                 "stateVariable": false,
                 "storageLocation": "default",
                 "typeDescriptions": {
@@ -271,10 +271,10 @@
                   "typeString": "uint256"
                 },
                 "typeName": {
-                  "id": 8437,
+                  "id": 8470,
                   "name": "uint256",
                   "nodeType": "ElementaryTypeName",
-                  "src": "12237:7:60",
+                  "src": "12237:7:61",
                   "typeDescriptions": {
                     "typeIdentifier": "t_uint256",
                     "typeString": "uint256"
@@ -284,13 +284,13 @@
               },
               {
                 "constant": false,
-                "id": 8440,
+                "id": 8473,
                 "mutability": "mutable",
                 "name": "AfollowsB",
-                "nameLocation": "12262:9:60",
+                "nameLocation": "12262:9:61",
                 "nodeType": "VariableDeclaration",
-                "scope": 8457,
-                "src": "12257:14:60",
+                "scope": 8490,
+                "src": "12257:14:61",
                 "stateVariable": false,
                 "storageLocation": "default",
                 "typeDescriptions": {
@@ -298,10 +298,10 @@
                   "typeString": "bool"
                 },
                 "typeName": {
-                  "id": 8439,
+                  "id": 8472,
                   "name": "bool",
                   "nodeType": "ElementaryTypeName",
-                  "src": "12257:4:60",
+                  "src": "12257:4:61",
                   "typeDescriptions": {
                     "typeIdentifier": "t_bool",
                     "typeString": "bool"
@@ -311,13 +311,13 @@
               },
               {
                 "constant": false,
-                "id": 8442,
+                "id": 8475,
                 "mutability": "mutable",
                 "name": "BfollowsA",
-                "nameLocation": "12286:9:60",
+                "nameLocation": "12286:9:61",
                 "nodeType": "VariableDeclaration",
-                "scope": 8457,
-                "src": "12281:14:60",
+                "scope": 8490,
+                "src": "12281:14:61",
                 "stateVariable": false,
                 "storageLocation": "default",
                 "typeDescriptions": {
@@ -325,10 +325,10 @@
                   "typeString": "bool"
                 },
                 "typeName": {
-                  "id": 8441,
+                  "id": 8474,
                   "name": "bool",
                   "nodeType": "ElementaryTypeName",
-                  "src": "12281:4:60",
+                  "src": "12281:4:61",
                   "typeDescriptions": {
                     "typeIdentifier": "t_bool",
                     "typeString": "bool"
@@ -338,13 +338,13 @@
               },
               {
                 "constant": false,
-                "id": 8444,
+                "id": 8477,
                 "mutability": "mutable",
                 "name": "AbansB",
-                "nameLocation": "12310:6:60",
+                "nameLocation": "12310:6:61",
                 "nodeType": "VariableDeclaration",
-                "scope": 8457,
-                "src": "12305:11:60",
+                "scope": 8490,
+                "src": "12305:11:61",
                 "stateVariable": false,
                 "storageLocation": "default",
                 "typeDescriptions": {
@@ -352,10 +352,10 @@
                   "typeString": "bool"
                 },
                 "typeName": {
-                  "id": 8443,
+                  "id": 8476,
                   "name": "bool",
                   "nodeType": "ElementaryTypeName",
-                  "src": "12305:4:60",
+                  "src": "12305:4:61",
                   "typeDescriptions": {
                     "typeIdentifier": "t_bool",
                     "typeString": "bool"
@@ -365,13 +365,13 @@
               },
               {
                 "constant": false,
-                "id": 8446,
+                "id": 8479,
                 "mutability": "mutable",
                 "name": "BbansA",
-                "nameLocation": "12331:6:60",
+                "nameLocation": "12331:6:61",
                 "nodeType": "VariableDeclaration",
-                "scope": 8457,
-                "src": "12326:11:60",
+                "scope": 8490,
+                "src": "12326:11:61",
                 "stateVariable": false,
                 "storageLocation": "default",
                 "typeDescriptions": {
@@ -379,10 +379,10 @@
                   "typeString": "bool"
                 },
                 "typeName": {
-                  "id": 8445,
+                  "id": 8478,
                   "name": "bool",
                   "nodeType": "ElementaryTypeName",
-                  "src": "12326:4:60",
+                  "src": "12326:4:61",
                   "typeDescriptions": {
                     "typeIdentifier": "t_bool",
                     "typeString": "bool"
@@ -392,13 +392,13 @@
               },
               {
                 "constant": false,
-                "id": 8448,
+                "id": 8481,
                 "mutability": "mutable",
                 "name": "AallowsBmsg",
-                "nameLocation": "12352:11:60",
+                "nameLocation": "12352:11:61",
                 "nodeType": "VariableDeclaration",
-                "scope": 8457,
-                "src": "12347:16:60",
+                "scope": 8490,
+                "src": "12347:16:61",
                 "stateVariable": false,
                 "storageLocation": "default",
                 "typeDescriptions": {
@@ -406,10 +406,10 @@
                   "typeString": "bool"
                 },
                 "typeName": {
-                  "id": 8447,
+                  "id": 8480,
                   "name": "bool",
                   "nodeType": "ElementaryTypeName",
-                  "src": "12347:4:60",
+                  "src": "12347:4:61",
                   "typeDescriptions": {
                     "typeIdentifier": "t_bool",
                     "typeString": "bool"
@@ -419,13 +419,13 @@
               },
               {
                 "constant": false,
-                "id": 8450,
+                "id": 8483,
                 "mutability": "mutable",
                 "name": "BallowsAmsg",
-                "nameLocation": "12378:11:60",
+                "nameLocation": "12378:11:61",
                 "nodeType": "VariableDeclaration",
-                "scope": 8457,
-                "src": "12373:16:60",
+                "scope": 8490,
+                "src": "12373:16:61",
                 "stateVariable": false,
                 "storageLocation": "default",
                 "typeDescriptions": {
@@ -433,10 +433,10 @@
                   "typeString": "bool"
                 },
                 "typeName": {
-                  "id": 8449,
+                  "id": 8482,
                   "name": "bool",
                   "nodeType": "ElementaryTypeName",
-                  "src": "12373:4:60",
+                  "src": "12373:4:61",
                   "typeDescriptions": {
                     "typeIdentifier": "t_bool",
                     "typeString": "bool"
@@ -446,36 +446,36 @@
               },
               {
                 "constant": false,
-                "id": 8453,
+                "id": 8486,
                 "mutability": "mutable",
                 "name": "AprivB",
-                "nameLocation": "12408:6:60",
+                "nameLocation": "12408:6:61",
                 "nodeType": "VariableDeclaration",
-                "scope": 8457,
-                "src": "12399:15:60",
+                "scope": 8490,
+                "src": "12399:15:61",
                 "stateVariable": false,
                 "storageLocation": "default",
                 "typeDescriptions": {
-                  "typeIdentifier": "t_enum$_Relation_$8436",
+                  "typeIdentifier": "t_enum$_Relation_$8469",
                   "typeString": "enum iii6Relations.Relation"
                 },
                 "typeName": {
-                  "id": 8452,
+                  "id": 8485,
                   "nodeType": "UserDefinedTypeName",
                   "pathNode": {
-                    "id": 8451,
+                    "id": 8484,
                     "name": "Relation",
                     "nameLocations": [
-                      "12399:8:60"
+                      "12399:8:61"
                     ],
                     "nodeType": "IdentifierPath",
-                    "referencedDeclaration": 8436,
-                    "src": "12399:8:60"
+                    "referencedDeclaration": 8469,
+                    "src": "12399:8:61"
                   },
-                  "referencedDeclaration": 8436,
-                  "src": "12399:8:60",
+                  "referencedDeclaration": 8469,
+                  "src": "12399:8:61",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_enum$_Relation_$8436",
+                    "typeIdentifier": "t_enum$_Relation_$8469",
                     "typeString": "enum iii6Relations.Relation"
                   }
                 },
@@ -483,36 +483,36 @@
               },
               {
                 "constant": false,
-                "id": 8456,
+                "id": 8489,
                 "mutability": "mutable",
                 "name": "BprivA",
-                "nameLocation": "12433:6:60",
+                "nameLocation": "12433:6:61",
                 "nodeType": "VariableDeclaration",
-                "scope": 8457,
-                "src": "12424:15:60",
+                "scope": 8490,
+                "src": "12424:15:61",
                 "stateVariable": false,
                 "storageLocation": "default",
                 "typeDescriptions": {
-                  "typeIdentifier": "t_enum$_Relation_$8436",
+                  "typeIdentifier": "t_enum$_Relation_$8469",
                   "typeString": "enum iii6Relations.Relation"
                 },
                 "typeName": {
-                  "id": 8455,
+                  "id": 8488,
                   "nodeType": "UserDefinedTypeName",
                   "pathNode": {
-                    "id": 8454,
+                    "id": 8487,
                     "name": "Relation",
                     "nameLocations": [
-                      "12424:8:60"
+                      "12424:8:61"
                     ],
                     "nodeType": "IdentifierPath",
-                    "referencedDeclaration": 8436,
-                    "src": "12424:8:60"
+                    "referencedDeclaration": 8469,
+                    "src": "12424:8:61"
                   },
-                  "referencedDeclaration": 8436,
-                  "src": "12424:8:60",
+                  "referencedDeclaration": 8469,
+                  "src": "12424:8:61",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_enum$_Relation_$8436",
+                    "typeIdentifier": "t_enum$_Relation_$8469",
                     "typeString": "enum iii6Relations.Relation"
                   }
                 },
@@ -520,25 +520,25 @@
               }
             ],
             "name": "Relations",
-            "nameLocation": "12217:9:60",
+            "nameLocation": "12217:9:61",
             "nodeType": "StructDefinition",
-            "scope": 8467,
-            "src": "12210:236:60",
+            "scope": 8500,
+            "src": "12210:236:61",
             "visibility": "public"
           },
           {
             "canonicalName": "iii6Relations.BoardMember",
-            "id": 8466,
+            "id": 8499,
             "members": [
               {
                 "constant": false,
-                "id": 8459,
+                "id": 8492,
                 "mutability": "mutable",
                 "name": "b_id",
-                "nameLocation": "12488:4:60",
+                "nameLocation": "12488:4:61",
                 "nodeType": "VariableDeclaration",
-                "scope": 8466,
-                "src": "12480:12:60",
+                "scope": 8499,
+                "src": "12480:12:61",
                 "stateVariable": false,
                 "storageLocation": "default",
                 "typeDescriptions": {
@@ -546,10 +546,10 @@
                   "typeString": "uint256"
                 },
                 "typeName": {
-                  "id": 8458,
+                  "id": 8491,
                   "name": "uint256",
                   "nodeType": "ElementaryTypeName",
-                  "src": "12480:7:60",
+                  "src": "12480:7:61",
                   "typeDescriptions": {
                     "typeIdentifier": "t_uint256",
                     "typeString": "uint256"
@@ -559,13 +559,13 @@
               },
               {
                 "constant": false,
-                "id": 8461,
+                "id": 8494,
                 "mutability": "mutable",
                 "name": "adr",
-                "nameLocation": "12510:3:60",
+                "nameLocation": "12510:3:61",
                 "nodeType": "VariableDeclaration",
-                "scope": 8466,
-                "src": "12502:11:60",
+                "scope": 8499,
+                "src": "12502:11:61",
                 "stateVariable": false,
                 "storageLocation": "default",
                 "typeDescriptions": {
@@ -573,10 +573,10 @@
                   "typeString": "address"
                 },
                 "typeName": {
-                  "id": 8460,
+                  "id": 8493,
                   "name": "address",
                   "nodeType": "ElementaryTypeName",
-                  "src": "12502:7:60",
+                  "src": "12502:7:61",
                   "stateMutability": "nonpayable",
                   "typeDescriptions": {
                     "typeIdentifier": "t_address",
@@ -587,13 +587,13 @@
               },
               {
                 "constant": false,
-                "id": 8463,
+                "id": 8496,
                 "mutability": "mutable",
                 "name": "share",
-                "nameLocation": "12531:5:60",
+                "nameLocation": "12531:5:61",
                 "nodeType": "VariableDeclaration",
-                "scope": 8466,
-                "src": "12523:13:60",
+                "scope": 8499,
+                "src": "12523:13:61",
                 "stateVariable": false,
                 "storageLocation": "default",
                 "typeDescriptions": {
@@ -601,10 +601,10 @@
                   "typeString": "uint256"
                 },
                 "typeName": {
-                  "id": 8462,
+                  "id": 8495,
                   "name": "uint256",
                   "nodeType": "ElementaryTypeName",
-                  "src": "12523:7:60",
+                  "src": "12523:7:61",
                   "typeDescriptions": {
                     "typeIdentifier": "t_uint256",
                     "typeString": "uint256"
@@ -614,13 +614,13 @@
               },
               {
                 "constant": false,
-                "id": 8465,
+                "id": 8498,
                 "mutability": "mutable",
                 "name": "info",
-                "nameLocation": "12553:4:60",
+                "nameLocation": "12553:4:61",
                 "nodeType": "VariableDeclaration",
-                "scope": 8466,
-                "src": "12546:11:60",
+                "scope": 8499,
+                "src": "12546:11:61",
                 "stateVariable": false,
                 "storageLocation": "default",
                 "typeDescriptions": {
@@ -628,10 +628,10 @@
                   "typeString": "string"
                 },
                 "typeName": {
-                  "id": 8464,
+                  "id": 8497,
                   "name": "string",
                   "nodeType": "ElementaryTypeName",
-                  "src": "12546:6:60",
+                  "src": "12546:6:61",
                   "typeDescriptions": {
                     "typeIdentifier": "t_string_storage_ptr",
                     "typeString": "string"
@@ -641,20 +641,20 @@
               }
             ],
             "name": "BoardMember",
-            "nameLocation": "12458:11:60",
+            "nameLocation": "12458:11:61",
             "nodeType": "StructDefinition",
-            "scope": 8467,
-            "src": "12451:113:60",
+            "scope": 8500,
+            "src": "12451:113:61",
             "visibility": "public"
           }
         ],
-        "scope": 8468,
-        "src": "8654:3912:60",
+        "scope": 8501,
+        "src": "8654:3912:61",
         "usedErrors": [],
         "usedEvents": []
       }
     ],
-    "src": "8629:6654:60"
+    "src": "8629:6654:61"
   },
   "compiler": {
     "name": "solc",
@@ -662,7 +662,7 @@
   },
   "networks": {},
   "schemaVersion": "3.4.16",
-  "updatedAt": "2023-11-30T04:01:16.775Z",
+  "updatedAt": "2023-12-02T01:32:19.242Z",
   "devdoc": {
     "kind": "dev",
     "methods": {},
