@@ -10,7 +10,6 @@ import { iii6, design, develop, launch, info, account, token, network } from "./
 import { show } from "./bin/dynelements";
 import { login, signup, edit } from "./bin/forms";
 import { iii6_stage, design_stage, develop_stage, launch_stage, info_stage } from "./bin/dyncontent";
-import { checkSnapshotValid } from "copy-webpack-plugin";
 
 const client = require("ipfs-http-client");
 const ipfs = client.create({
@@ -36,7 +35,8 @@ const navigate = (e) => {
   } else if (e.target.id == "info") {
     show.innerHTML = info_stage;
   } else if (e.target.id == "account") {
-    checkIn();
+    modalbox.innerHTML = signup;
+    modal.style.display = "grid";
   } else if (e.target.id == "token") {
   } else if (e.target.id == "network") {
   } else {
@@ -59,21 +59,6 @@ const loaded = () => {
   network.addEventListener("click", navigate);
   closer.addEventListener("click", closeModal);
   console.log(":: iii6v2 navigation initialised ::");
-};
-const checkIn = () => {
-  let check = checkState();
-  if (check == true) {
-    modalbox.innerHTML = signup;
-    modal.style.display = "grid";
-    console.log(":: new account ::");
-  } else {
-    modalbox.innerHTML = login;
-    modal.style.display = "grid";
-    console.log(":: known user ::");
-  }
-};
-const checkState = () => {
-  return true;
 };
 const connected = () => {};
 const loggedIn = () => {};
