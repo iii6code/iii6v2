@@ -1,5 +1,9 @@
 # III6 Framework
 
++ empowering web3
++ providing NFTech
++ onboarding web2
+
 ## Decentral Interactive Asset Standard
 
 ## DOJO Dapp SDK
