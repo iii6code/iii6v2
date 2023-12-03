@@ -40,7 +40,7 @@ The iii6 Framework is at the moment only available as git project but the instal
 
 ## Cloud Development
 
-# Settings
+## Clone and Run
 
 Simply clone the repository
 `git clone https://github.com/iii6code/iii6v2 iii6`
@@ -70,7 +70,25 @@ Run the Development Template
 
 ## Compile
 
+Simply type `npm run compile`
+
 ## Migrate & Deploy
+
+MAINNETWORKS
+
+For Mainnet type `npm run migrate:main`
+
+For Polygon type `npm run migrate:polygon`
+
+For Avalanche type `npm run migrate:avax`
+
+TESTNETWORKS
+
+For Goerly type `npm run migrate:goerly`
+
+For Mumbai type `npm run migrate:mumbai`
+
+For Fuji type `npm run migrate:fuji`
 
 ## Decentral Hosting
 
