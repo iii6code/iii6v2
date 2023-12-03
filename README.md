@@ -44,14 +44,19 @@ The iii6 Framework is at the moment only available as git project but the instal
 
 Simply clone the repository
 `git clone https://github.com/iii6code/iii6v2 iii6`
+
 Change Directory
 `cd iii6`
+
 Install Webpack in Dev Environment
 `npm i --save dev webpack`
+
 Install all NPM Packages
 `npm i`
+
 Quick Audit Fixes
 `npm audit fix`
+
 Run the Development Template
 `npm start`
 
