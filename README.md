@@ -96,10 +96,10 @@ For Mumbai type `npm run migrate:mumbai`
 
 For Fuji type `npm run migrate:fuji`
 
-## Decentral Hosting
+## Decentral FileStorage (recommended)
 
-## Decentral FileStorage
+## Decentral Hosting (recommended)
 
-```
+## ClearWeb Filestorage
 
-```
+## ClearWeb Hosting (user friendly)
