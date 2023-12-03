@@ -62,7 +62,7 @@ Run the Development Template
 
 ## Networks
 
-inside the `./truffle-config.js` & `./package.json` configuration files you can add or remove networks. You will also have to edit the
+inside the `./truffle-config.js` & `./package.json` configuration files you can add or remove networks. Every migrated contract in `./dist/contracts` has a `network` array that displays the network information for all networks you deployed to. Please note the order and edit the function `netCheck` inside `./src/app.js`. In case you are using Oracles, VRF, Automations or CCIP you need to make sure the Chainlink service is supported on that chain here ... https://docs.chain.link
 
 ## Templates
 
