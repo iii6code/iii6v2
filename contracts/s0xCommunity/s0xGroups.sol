@@ -91,8 +91,10 @@
 pragma solidity ^0.8.7;
 
 import "./s0xUsers.sol";
-import {s0xFriends, iii6Relations, iii6Math} from "./s0xFriends.sol";
-import "../iii6Utils/Misc/Errors/iii6Errors.sol";
+import {s0xFriends} from "./s0xFriends.sol";
+import "../iii6utils/Misc/Errors/iii6Errors.sol";
+import {iii6Math} from "../iii6utils/Math/iii6Math.sol";
+import {iii6Relations} from "../iii6utils/Misc/iii6Relations.sol";
 
 contract s0xGroups is iii6Math, iii6Relations, iii6Errors {
     s0xUsers private user; // user contract reference

@@ -5,7 +5,7 @@ import { sha256 } from "crypto-hash";
 import UAuth from "@uauth/js";
 import { s0x, Friends, Groups } from "./bin/contracts";
 import { bg, dev_inf, stage, nav, head, move, modal, modalbox, foot } from "./bin/mainelements";
-import { name, email, country, mobile, pin, submit, closer } from "./bin/formelements";
+import { resetFormElements, name, emamil, country, mobile, mm, ud, logg, closer } from "./bin/formelements";
 import { iii6, design, develop, launch, info, account, token, network } from "./bin/navelements";
 import { show } from "./bin/dynelements";
 import { login, signup, edit } from "./bin/forms";
@@ -20,7 +20,7 @@ const ipfs = client.create({
 
 let accounts;
 let user;
-let networks;
+let net;
 let balance;
 
 const provider = new ethers.providers.Web3Provider(web3.currentProvider);
@@ -39,7 +39,7 @@ const navigate = async (e) => {
   } else if (e.target.id == "info") {
     show.innerHTML = info_stage;
   } else if (e.target.id == "account") {
-    await checkIn();
+    checkIn();
   } else if (e.target.id == "token") {
   } else if (e.target.id == "network") {
   } else {
@@ -57,16 +57,86 @@ const loaded = () => {
   develop.addEventListener("click", navigate);
   launch.addEventListener("click", navigate);
   info.addEventListener("click", navigate);
-  account.addEventListener("click", checkIn);
+  account.addEventListener("click", navigate);
   token.addEventListener("click", navigate);
   network.addEventListener("click", navigate);
-  closer.addEventListener("click", navigate);
+  closer.addEventListener("click", closeModal);
   console.log(":: iii6v2 navigation initialised ::");
   web3init();
 };
 const checkIn = async () => {
-  signer = provider.getSigner(0);
-  console.log("::", signer, "::");
+  signer = await provider.getSigner();
+  accounts = await provider.send("eth_requestAccounts", []);
+  user = accounts[0];
+  net = await provider.getNetwork();
+  console.log("::", accounts, net.chainId, "::");
+  let uData = await checkUser();
+  console.log(":: Check User :", uData, "::");
+  if (uData == 0) {
+    console.log(":: new user ::");
+    modalbox.innerHTML = signup;
+    console.log(":: sign up new user ::");
+    resetFormElements();
+    mm.addEventListener("click", mmSignUp);
+    ud.addEventListener("click", udSignUp);
+    logg.addEventListener("click", doSignUp);
+    console.log(logg, mm, ud);
+  } else if (uData == 1) {
+    console.log(":: known user ::");
+    modalbox.innerHTML = login;
+    console.log(":: login user ::");
+  } else if (uData == 99) {
+    console.log(":: admin user ::");
+    modalbox.innerHTML = login;
+    console.log(":: login user ::");
+  }
+  modal.style.display = "grid";
+};
+const doSignUp = async (e) => {
+  console.log(":: checking web2 user data ::");
+};
+const mmSignUp = async (e) => {
+  console.log(":: checking metamask user data ::");
+};
+const udSignUp = async (e) => {
+  console.log(":: checking unstoppable user data ::");
+};
+const checkUser = async () => {
+  const S0X = await s0xData();
+  // Is User
+  const isUser = await S0X.isUser(user)
+    .then((res) => {
+      console.log("// makeUser response : ", res);
+      // action
+
+      return res;
+    })
+    .catch((err) => {
+      console.error(err);
+      return err;
+    });
+  if (isUser === true) {
+    const role = await S0X.roles(user)
+      .then((res) => {
+        console.log("// makeUser response : ", Number(res._hex));
+        // action
+
+        return Number(res._hex);
+      })
+      .catch((err) => {
+        console.error(err);
+        return err;
+      });
+    return isUser, role;
+  } else return isUser, 0;
+};
+const s0xData = async () => {
+  let a;
+  if (Number(net.chainId) === 80001) a = 0;
+  if (Number(net.chainId) === 137) a = 1;
+  const deploymentKey = await Object.keys(s0x.networks)[a];
+  console.log(net, deploymentKey, s0x.networks);
+  return new ethers.Contract(s0x.networks[deploymentKey].address, s0x.abi, signer);
 };
 const connected = () => {};
 const loggedIn = () => {};

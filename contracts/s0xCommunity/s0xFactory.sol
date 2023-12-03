@@ -91,8 +91,10 @@
 pragma solidity ^0.8.7;
 
 import "./s0xUsers.sol";
-import {iii6Math, s0xFriends, iii6Relations} from "./s0xFriends.sol";
+import "./s0xFriends.sol";
 import "./s0xGroups.sol";
+import "../iii6utils/Math/iii6Math.sol";
+import "../iii6utils/Misc/iii6Relations.sol";
 
 /**
  * @dev the s0xFactory creates the s0xial user friend and group interface and

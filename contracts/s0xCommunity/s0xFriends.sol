@@ -90,8 +90,8 @@
 
 pragma solidity ^0.8.7;
 
-import "../iii6Utils/Math/iii6Math.sol";
-import "../iii6Utils/Misc/iii6Relations.sol";
+import "../iii6utils/Math/iii6Math.sol";
+import "../iii6utils/Misc/iii6Relations.sol";
 import "./s0xUsers.sol";
 
 /**

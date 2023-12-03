@@ -141,15 +141,15 @@
     "absolutePath": "project:/contracts/iii6utils/Misc/Errors/iii6Errors.sol",
     "exportedSymbols": {
       "iii6Errors": [
-        8307
+        8004
       ]
     },
-    "id": 8308,
+    "id": 8005,
     "license": "GPL-3.0",
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 8256,
+        "id": 7953,
         "literals": [
           "solidity",
           "^",
@@ -157,7 +157,7 @@
           ".7"
         ],
         "nodeType": "PragmaDirective",
-        "src": "8629:23:57"
+        "src": "8629:23:54"
       },
       {
         "abstract": true,
@@ -166,398 +166,398 @@
         "contractDependencies": [],
         "contractKind": "contract",
         "fullyImplemented": true,
-        "id": 8307,
+        "id": 8004,
         "linearizedBaseContracts": [
-          8307
+          8004
         ],
         "name": "iii6Errors",
-        "nameLocation": "8672:10:57",
+        "nameLocation": "8672:10:54",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "errorSelector": "e08ca6b0",
-            "id": 8258,
+            "id": 7955,
             "name": "Already_Listed",
-            "nameLocation": "8695:14:57",
+            "nameLocation": "8695:14:54",
             "nodeType": "ErrorDefinition",
             "parameters": {
-              "id": 8257,
+              "id": 7954,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "8709:2:57"
+              "src": "8709:2:54"
             },
-            "src": "8689:23:57"
+            "src": "8689:23:54"
           },
           {
             "errorSelector": "ea5db9c5",
-            "id": 8260,
+            "id": 7957,
             "name": "All_Slots_Taken",
-            "nameLocation": "8723:15:57",
+            "nameLocation": "8723:15:54",
             "nodeType": "ErrorDefinition",
             "parameters": {
-              "id": 8259,
+              "id": 7956,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "8738:2:57"
+              "src": "8738:2:54"
             },
-            "src": "8717:24:57"
+            "src": "8717:24:54"
           },
           {
             "errorSelector": "efc60c14",
-            "id": 8262,
+            "id": 7959,
             "name": "Insufficient_Balance",
-            "nameLocation": "8752:20:57",
+            "nameLocation": "8752:20:54",
             "nodeType": "ErrorDefinition",
             "parameters": {
-              "id": 8261,
+              "id": 7958,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "8772:2:57"
+              "src": "8772:2:54"
             },
-            "src": "8746:29:57"
+            "src": "8746:29:54"
           },
           {
             "errorSelector": "d578678f",
-            "id": 8264,
+            "id": 7961,
             "name": "Insufficient_MLQ",
-            "nameLocation": "8786:16:57",
+            "nameLocation": "8786:16:54",
             "nodeType": "ErrorDefinition",
             "parameters": {
-              "id": 8263,
+              "id": 7960,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "8802:2:57"
+              "src": "8802:2:54"
             },
-            "src": "8780:25:57"
+            "src": "8780:25:54"
           },
           {
             "errorSelector": "9bb42d4b",
-            "id": 8266,
+            "id": 7963,
             "name": "Insufficient_Funds",
-            "nameLocation": "8816:18:57",
+            "nameLocation": "8816:18:54",
             "nodeType": "ErrorDefinition",
             "parameters": {
-              "id": 8265,
+              "id": 7962,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "8834:2:57"
+              "src": "8834:2:54"
             },
-            "src": "8810:27:57"
+            "src": "8810:27:54"
           },
           {
             "errorSelector": "99956c46",
-            "id": 8268,
+            "id": 7965,
             "name": "Insufficient_Amount",
-            "nameLocation": "8848:19:57",
+            "nameLocation": "8848:19:54",
             "nodeType": "ErrorDefinition",
             "parameters": {
-              "id": 8267,
+              "id": 7964,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "8867:2:57"
+              "src": "8867:2:54"
             },
-            "src": "8842:28:57"
+            "src": "8842:28:54"
           },
           {
             "errorSelector": "064a6c41",
-            "id": 8270,
+            "id": 7967,
             "name": "Invalid_Amount",
-            "nameLocation": "8881:14:57",
+            "nameLocation": "8881:14:54",
             "nodeType": "ErrorDefinition",
             "parameters": {
-              "id": 8269,
+              "id": 7966,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "8895:2:57"
+              "src": "8895:2:54"
             },
-            "src": "8875:23:57"
+            "src": "8875:23:54"
           },
           {
             "errorSelector": "3a5bc321",
-            "id": 8272,
+            "id": 7969,
             "name": "Min_Requirements_Not_Met",
-            "nameLocation": "8909:24:57",
+            "nameLocation": "8909:24:54",
             "nodeType": "ErrorDefinition",
             "parameters": {
-              "id": 8271,
+              "id": 7968,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "8933:2:57"
+              "src": "8933:2:54"
             },
-            "src": "8903:33:57"
+            "src": "8903:33:54"
           },
           {
             "errorSelector": "50c9ab5c",
-            "id": 8274,
+            "id": 7971,
             "name": "Mint_Is_Not_Yet_Live",
-            "nameLocation": "8947:20:57",
+            "nameLocation": "8947:20:54",
             "nodeType": "ErrorDefinition",
             "parameters": {
-              "id": 8273,
+              "id": 7970,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "8967:2:57"
+              "src": "8967:2:54"
             },
-            "src": "8941:29:57"
+            "src": "8941:29:54"
           },
           {
             "errorSelector": "4c17e010",
-            "id": 8276,
+            "id": 7973,
             "name": "Mint_In_Progress",
-            "nameLocation": "8981:16:57",
+            "nameLocation": "8981:16:54",
             "nodeType": "ErrorDefinition",
             "parameters": {
-              "id": 8275,
+              "id": 7972,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "8997:2:57"
+              "src": "8997:2:54"
             },
-            "src": "8975:25:57"
+            "src": "8975:25:54"
           },
           {
             "errorSelector": "673ed843",
-            "id": 8278,
+            "id": 7975,
             "name": "Max_Tokens_Minted",
-            "nameLocation": "9011:17:57",
+            "nameLocation": "9011:17:54",
             "nodeType": "ErrorDefinition",
             "parameters": {
-              "id": 8277,
+              "id": 7974,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "9028:2:57"
+              "src": "9028:2:54"
             },
-            "src": "9005:26:57"
+            "src": "9005:26:54"
           },
           {
             "errorSelector": "167bf703",
-            "id": 8280,
+            "id": 7977,
             "name": "Greenlist_Expired",
-            "nameLocation": "9042:17:57",
+            "nameLocation": "9042:17:54",
             "nodeType": "ErrorDefinition",
             "parameters": {
-              "id": 8279,
+              "id": 7976,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "9059:2:57"
+              "src": "9059:2:54"
             },
-            "src": "9036:26:57"
+            "src": "9036:26:54"
           },
           {
             "errorSelector": "1e6f0b54",
-            "id": 8282,
+            "id": 7979,
             "name": "Insufficient_Supply",
-            "nameLocation": "9073:19:57",
+            "nameLocation": "9073:19:54",
             "nodeType": "ErrorDefinition",
             "parameters": {
-              "id": 8281,
+              "id": 7978,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "9092:2:57"
+              "src": "9092:2:54"
             },
-            "src": "9067:28:57"
+            "src": "9067:28:54"
           },
           {
             "errorSelector": "684cf537",
-            "id": 8284,
+            "id": 7981,
             "name": "Not_Greenlisted",
-            "nameLocation": "9106:15:57",
+            "nameLocation": "9106:15:54",
             "nodeType": "ErrorDefinition",
             "parameters": {
-              "id": 8283,
+              "id": 7980,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "9121:2:57"
+              "src": "9121:2:54"
             },
-            "src": "9100:24:57"
+            "src": "9100:24:54"
           },
           {
             "errorSelector": "ada869a8",
-            "id": 8286,
+            "id": 7983,
             "name": "Sold_Out",
-            "nameLocation": "9135:8:57",
+            "nameLocation": "9135:8:54",
             "nodeType": "ErrorDefinition",
             "parameters": {
-              "id": 8285,
+              "id": 7982,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "9143:2:57"
+              "src": "9143:2:54"
             },
-            "src": "9129:17:57"
+            "src": "9129:17:54"
           },
           {
             "errorSelector": "018a9872",
-            "id": 8288,
+            "id": 7985,
             "name": "Event_Has_Ended",
-            "nameLocation": "9157:15:57",
+            "nameLocation": "9157:15:54",
             "nodeType": "ErrorDefinition",
             "parameters": {
-              "id": 8287,
+              "id": 7984,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "9172:2:57"
+              "src": "9172:2:54"
             },
-            "src": "9151:24:57"
+            "src": "9151:24:54"
           },
           {
             "errorSelector": "82b42900",
-            "id": 8290,
+            "id": 7987,
             "name": "Unauthorized",
-            "nameLocation": "9186:12:57",
+            "nameLocation": "9186:12:54",
             "nodeType": "ErrorDefinition",
             "parameters": {
-              "id": 8289,
+              "id": 7986,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "9198:2:57"
+              "src": "9198:2:54"
             },
-            "src": "9180:21:57"
+            "src": "9180:21:54"
           },
           {
             "errorSelector": "7cd5facc",
-            "id": 8292,
+            "id": 7989,
             "name": "You_Need_To_Wait",
-            "nameLocation": "9212:16:57",
+            "nameLocation": "9212:16:54",
             "nodeType": "ErrorDefinition",
             "parameters": {
-              "id": 8291,
+              "id": 7988,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "9228:2:57"
+              "src": "9228:2:54"
             },
-            "src": "9206:25:57"
+            "src": "9206:25:54"
           },
           {
             "errorSelector": "905340b2",
-            "id": 8294,
+            "id": 7991,
             "name": "You_Are_Not_The_Holder",
-            "nameLocation": "9242:22:57",
+            "nameLocation": "9242:22:54",
             "nodeType": "ErrorDefinition",
             "parameters": {
-              "id": 8293,
+              "id": 7990,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "9264:2:57"
+              "src": "9264:2:54"
             },
-            "src": "9236:31:57"
+            "src": "9236:31:54"
           },
           {
             "errorSelector": "eb688586",
-            "id": 8296,
+            "id": 7993,
             "name": "Array_Length_Mismatch",
-            "nameLocation": "9278:21:57",
+            "nameLocation": "9278:21:54",
             "nodeType": "ErrorDefinition",
             "parameters": {
-              "id": 8295,
+              "id": 7992,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "9299:2:57"
+              "src": "9299:2:54"
             },
-            "src": "9272:30:57"
+            "src": "9272:30:54"
           },
           {
             "errorSelector": "c1a21f4e",
-            "id": 8298,
+            "id": 7995,
             "name": "Invalid_Response",
-            "nameLocation": "9313:16:57",
+            "nameLocation": "9313:16:54",
             "nodeType": "ErrorDefinition",
             "parameters": {
-              "id": 8297,
+              "id": 7994,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "9329:2:57"
+              "src": "9329:2:54"
             },
-            "src": "9307:25:57"
+            "src": "9307:25:54"
           },
           {
             "errorSelector": "febe7e19",
-            "id": 8300,
+            "id": 7997,
             "name": "Not_Burnable",
-            "nameLocation": "9343:12:57",
+            "nameLocation": "9343:12:54",
             "nodeType": "ErrorDefinition",
             "parameters": {
-              "id": 8299,
+              "id": 7996,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "9355:2:57"
+              "src": "9355:2:54"
             },
-            "src": "9337:21:57"
+            "src": "9337:21:54"
           },
           {
             "errorSelector": "da61c0d8",
-            "id": 8302,
+            "id": 7999,
             "name": "Not_Pausable",
-            "nameLocation": "9369:12:57",
+            "nameLocation": "9369:12:54",
             "nodeType": "ErrorDefinition",
             "parameters": {
-              "id": 8301,
+              "id": 7998,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "9381:2:57"
+              "src": "9381:2:54"
             },
-            "src": "9363:21:57"
+            "src": "9363:21:54"
           },
           {
             "errorSelector": "cece67ff",
-            "id": 8304,
+            "id": 8001,
             "name": "Not_Friends",
-            "nameLocation": "9395:11:57",
+            "nameLocation": "9395:11:54",
             "nodeType": "ErrorDefinition",
             "parameters": {
-              "id": 8303,
+              "id": 8000,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "9406:2:57"
+              "src": "9406:2:54"
             },
-            "src": "9389:20:57"
+            "src": "9389:20:54"
           },
           {
             "errorSelector": "032ad0c1",
-            "id": 8306,
+            "id": 8003,
             "name": "Not_Friends_Rev",
-            "nameLocation": "9420:15:57",
+            "nameLocation": "9420:15:54",
             "nodeType": "ErrorDefinition",
             "parameters": {
-              "id": 8305,
+              "id": 8002,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "9435:2:57"
+              "src": "9435:2:54"
             },
-            "src": "9414:24:57"
+            "src": "9414:24:54"
           }
         ],
-        "scope": 8308,
-        "src": "8654:786:57",
+        "scope": 8005,
+        "src": "8654:786:54",
         "usedErrors": [
-          8258,
-          8260,
-          8262,
-          8264,
-          8266,
-          8268,
-          8270,
-          8272,
-          8274,
-          8276,
-          8278,
-          8280,
-          8282,
-          8284,
-          8286,
-          8288,
-          8290,
-          8292,
-          8294,
-          8296,
-          8298,
-          8300,
-          8302,
-          8304,
-          8306
+          7955,
+          7957,
+          7959,
+          7961,
+          7963,
+          7965,
+          7967,
+          7969,
+          7971,
+          7973,
+          7975,
+          7977,
+          7979,
+          7981,
+          7983,
+          7985,
+          7987,
+          7989,
+          7991,
+          7993,
+          7995,
+          7997,
+          7999,
+          8001,
+          8003
         ],
         "usedEvents": []
       }
     ],
-    "src": "8629:812:57"
+    "src": "8629:812:54"
   },
   "compiler": {
     "name": "solc",
@@ -565,7 +565,7 @@
   },
   "networks": {},
   "schemaVersion": "3.4.16",
-  "updatedAt": "2023-12-02T01:32:19.242Z",
+  "updatedAt": "2023-12-02T17:55:24.938Z",
   "devdoc": {
     "kind": "dev",
     "methods": {},
