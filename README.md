@@ -76,9 +76,9 @@ a directory `./dist` will be created and webpack will compress your project into
 
 Simply type `npm run compile`
 
-## Migrate & Deploy
-
 a directory `./dist/contracts` will be created and solcbin will compile your contracts into it
+
+## Migrate & Deploy
 
 MAINNETWORKS
 
@@ -95,6 +95,8 @@ For Goerly type `npm run migrate:goerly`
 For Mumbai type `npm run migrate:mumbai`
 
 For Fuji type `npm run migrate:fuji`
+
+a directory `./dist/contracts` will be created and solcbin will compile your contracts into it
 
 ## Decentral FileStorage (recommended)
 
