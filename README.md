@@ -62,6 +62,8 @@ Run the Development Template
 
 ## Networks
 
+inside the `./truffle-config.js` & `./package.json` configuration files you can add or remove networks. You will also have to edit the
+
 ## Templates
 
 # Usage

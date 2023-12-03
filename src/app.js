@@ -137,10 +137,14 @@ const checkUser = async () => {
     return isUser, role;
   } else return isUser, 0;
 };
-const s0xData = async () => {
+const netCheck = () => {
   let a;
   if (Number(net.chainId) === 80001) a = 0;
   if (Number(net.chainId) === 137) a = 1;
+  return a;
+};
+const s0xData = async () => {
+  let a = netCheck();
   const deploymentKey = await Object.keys(s0x.networks)[a];
   console.log(net, deploymentKey, s0x.networks);
   return new ethers.Contract(s0x.networks[deploymentKey].address, s0x.abi, signer);
