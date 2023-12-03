@@ -68,11 +68,17 @@ Run the Development Template
 
 ## Build
 
+Simply type npm run build
+
+a directory `./dist` will be created and webpack will compress your project into it
+
 ## Compile
 
 Simply type `npm run compile`
 
 ## Migrate & Deploy
+
+a directory `./dist/contracts` will be created and solcbin will compile your contracts into it
 
 MAINNETWORKS
 
