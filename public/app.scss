@@ -171,9 +171,6 @@ input {
 .mtitle,
 .mfoot {
   text-align: center;
-  pointer-events: none;
-  -moz-user-select: none;
-  -webkit-user-select: none;
 }
 
 .dbtn {
@@ -194,7 +191,17 @@ input {
   border-radius: 9px;
   border: 1px solid grey;
 }
-
+#mm,
+#ud,
+#logg {
+  z-index: 2000;
+}
+#mm:hover,
+#ud:hover,
+#logg:hover {
+  background: darkgrey;
+  color: white;
+}
 #logg {
   background-color: mediumseagreen;
   color: white;

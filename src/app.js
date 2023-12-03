@@ -5,7 +5,7 @@ import { sha256 } from "crypto-hash";
 import UAuth from "@uauth/js";
 import { s0x, Friends, Groups } from "./bin/contracts";
 import { bg, dev_inf, stage, nav, head, move, modal, modalbox, foot } from "./bin/mainelements";
-import { resetFormElements, name, emamil, country, mobile, mm, ud, logg, closer } from "./bin/formelements";
+import { resetFormElements, name, email, country, mobile, pin, mm, ud, logg, closer } from "./bin/formelements";
 import { iii6, design, develop, launch, info, account, token, network } from "./bin/navelements";
 import { show } from "./bin/dynelements";
 import { login, signup, edit } from "./bin/forms";
@@ -80,15 +80,22 @@ const checkIn = async () => {
     mm.addEventListener("click", mmSignUp);
     ud.addEventListener("click", udSignUp);
     logg.addEventListener("click", doSignUp);
-    console.log(logg, mm, ud);
   } else if (uData == 1) {
     console.log(":: known user ::");
     modalbox.innerHTML = login;
     console.log(":: login user ::");
+    resetFormElements();
+    mm.addEventListener("click", mmSignUp);
+    ud.addEventListener("click", udSignUp);
+    logg.addEventListener("click", doSignUp);
   } else if (uData == 99) {
     console.log(":: admin user ::");
     modalbox.innerHTML = login;
     console.log(":: login user ::");
+    resetFormElements();
+    mm.addEventListener("click", mmSignUp);
+    ud.addEventListener("click", udSignUp);
+    logg.addEventListener("click", doSignUp);
   }
   modal.style.display = "grid";
 };
