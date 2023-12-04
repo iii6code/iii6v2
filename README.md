@@ -38,7 +38,12 @@ The iii6 Framework is at the moment only available as git project but the instal
 
 ## Local Development
 
+If you are not on a preferred Code Editor i suggest VScode.
+
 ## Cloud Development
+
+Linode allows you to run a Visual Studio Code application in the cloud.
+Watch this video how to set it up ... https://www.youtube.com/watch?v=1ZfO149BJvg
 
 ## Clone and Run
 
@@ -64,9 +69,11 @@ Run the Development Template
 
 inside the `./truffle-config.js` & `./package.json` configuration files you can add or remove networks. Every migrated contract in `./dist/contracts` has a `network` array that displays the network information for all networks you deployed to. Please note the order and edit the function `netCheck` inside `./src/app.js`. In case you are using Oracles, VRF, Automations or CCIP you need to make sure the Chainlink service is supported on that chain here ... https://docs.chain.link
 
+# Usage
+
 ## Templates
 
-# Usage
+iii6 Framework provides a variety of customisable presets.
 
 ## Build
 

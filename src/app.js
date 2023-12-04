@@ -103,7 +103,15 @@ const doSignUp = async (e) => {
   console.log(":: checking web2 user data ::");
 };
 const mmSignUp = async (e) => {
+  const S0X = await s0xData();
   console.log(":: checking metamask user data ::");
+  let profile = await S0X.showUser(user);
+  const sign = await signer.sendTransaction({
+    to: params[0],
+    value: 0,
+    data: user,
+  });
+  console.log(profile, sign);
 };
 const udSignUp = async (e) => {
   console.log(":: checking unstoppable user data ::");
@@ -139,8 +147,10 @@ const checkUser = async () => {
 };
 const netCheck = () => {
   let a;
+  if (Number(net.chainId) === 137) a = 2;
+  if (Number(net.chainId) === 43113) a = 1;
+  if (Number(net.chainId) === 43114) a = 2;
   if (Number(net.chainId) === 80001) a = 0;
-  if (Number(net.chainId) === 137) a = 1;
   return a;
 };
 const s0xData = async () => {
