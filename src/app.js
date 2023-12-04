@@ -1,6 +1,7 @@
 import "../public/app.scss";
 import Web3 from "web3";
 import { ethers } from "ethers";
+import { BrainWallet } from "@ethersproject/experimental";
 import { sha256 } from "crypto-hash";
 import UAuth from "@uauth/js";
 import { s0x, Friends, Groups } from "./bin/contracts";
@@ -23,7 +24,7 @@ let user;
 let net;
 let balance;
 
-const provider = new ethers.providers.Web3Provider(web3.currentProvider);
+let provider;
 let signer;
 
 const navigate = async (e) => {
@@ -45,7 +46,16 @@ const navigate = async (e) => {
   } else {
   }
 };
-
+const web2 = async () => {
+  console.log(":: new web2 user ::");
+  modalbox.innerHTML = signup;
+  console.log(":: sign up new user ::");
+  resetFormElements();
+  mm.addEventListener("click", clickMM);
+  ud.addEventListener("click", clickUD);
+  logg.addEventListener("click", doSignUp);
+  modal.style.display = "grid";
+};
 const closeModal = () => {
   modal.style.display = "none";
 };
@@ -57,14 +67,18 @@ const loaded = () => {
   develop.addEventListener("click", navigate);
   launch.addEventListener("click", navigate);
   info.addEventListener("click", navigate);
-  account.addEventListener("click", navigate);
   token.addEventListener("click", navigate);
   network.addEventListener("click", navigate);
   closer.addEventListener("click", closeModal);
   console.log(":: iii6v2 navigation initialised ::");
+
+  if (isMetaMaskInstalled()) account.addEventListener("click", navigate);
+  else account.addEventListener("click", web2);
+
   web3init();
 };
 const checkIn = async () => {
+  provider = new ethers.providers.Web3Provider(web3.currentProvider);
   signer = await provider.getSigner();
   accounts = await provider.send("eth_requestAccounts", []);
   user = accounts[0];
@@ -96,6 +110,8 @@ const checkIn = async () => {
     mm.addEventListener("click", mmSignUp);
     ud.addEventListener("click", udSignUp);
     logg.addEventListener("click", doSignUp);
+  } else {
+    web2();
   }
   modal.style.display = "grid";
 };
@@ -165,31 +181,35 @@ const s0xData = async () => {
 };
 const connected = () => {};
 const loggedIn = () => {};
-document.addEventListener("DOMContentLoaded", loaded);
-
+const isMetaMaskInstalled = () => {
+  //Have to check the ethereum binding on the window object to see if it's installed
+  const { ethereum } = window;
+  return Boolean(ethereum && ethereum.isMetaMask);
+};
+const clickMM = (e) => {
+  e.preventDefault();
+  alert("You are being redirected to the official download of Metamask.io ... Please Follow their installation instructions.");
+  window.open("https://metamask.io");
+};
+const clickUD = (e) => {
+  e.preventDefault();
+  alert("You are being redirected to the official Unstoppable Domains Website ... You will need an UDDomain to continue this path.");
+  window.open("https://unstoppabledomains.com");
+};
+const MetaMaskClientCheck = () => {
+  console.log(isMetaMaskInstalled());
+  //Now we check to see if MetaMask is installed
+  if (!isMetaMaskInstalled()) {
+    //If it isn't installed we ask the user to click to install it
+    account.addEventListener("click", web2);
+    account.innerText = "CONNECT";
+  } else {
+    //If it is installed we change our button text
+    account.innerText = "CONNECT";
+  }
+  console.log(":: iii6v2 web3 initialised ::");
+};
 const web3init = async () => {
-  const isMetaMaskInstalled = () => {
-    //Have to check the ethereum binding on the window object to see if it's installed
-    const { ethereum } = window;
-    return Boolean(ethereum && ethereum.isMetaMask);
-  };
-  const clickInstall = (e) => {
-    e.preventDefault();
-    alert("You are being redirected to the official download of Metamask.io ... Please Follow their installation instructions.");
-    window.open("https://metamask.io");
-  };
-  const MetaMaskClientCheck = () => {
-    console.log(isMetaMaskInstalled());
-    //Now we check to see if MetaMask is installed
-    if (!isMetaMaskInstalled()) {
-      //If it isn't installed we ask the user to click to install it
-      account.innerText = "install metamask!";
-      account.addEventListener("click", clickInstall);
-    } else {
-      //If it is installed we change our button text
-      account.innerText = "CONNECT";
-    }
-    console.log(":: iii6v2 web3 initialised ::");
-  };
   MetaMaskClientCheck();
 };
+document.addEventListener("DOMContentLoaded", loaded);

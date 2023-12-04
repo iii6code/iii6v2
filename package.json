@@ -30,6 +30,7 @@
     "@babel/core": "^7.16.7",
     "@chainlink/contracts": "^0.6.1",
     "@chainlink/contracts-ccip": "^0.7.6",
+    "@ethersproject/experimental": "^5.7.0",
     "@metamask/detect-provider": "^1.2.0",
     "@openzeppelin/contracts": "^5.0.0",
     "@openzeppelin/test-helpers": "^0.5.15",
