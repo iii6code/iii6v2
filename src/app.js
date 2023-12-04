@@ -59,7 +59,6 @@ const web2 = async () => {
 const closeModal = () => {
   modal.style.display = "none";
 };
-
 const loaded = () => {
   console.log(":: loaded iii6v2 framework ::");
   iii6.addEventListener("click", navigate);
@@ -117,6 +116,9 @@ const checkIn = async () => {
 };
 const doSignUp = async (e) => {
   console.log(":: checking web2 user data ::");
+  const wallet = await BrainWallet.generate(email.value, pin.value);
+  logg.innerText = "LOADING";
+  console.log(wallet);
 };
 const mmSignUp = async (e) => {
   const S0X = await s0xData();
@@ -126,6 +128,7 @@ const mmSignUp = async (e) => {
   console.log(profile);
   closeModal();
   let pro = JSON.parse(profile);
+  show.innerHTML = profile;
   account.innerText = pro.name;
   account.removeEventListener("click", navigate);
   account.addEventListener("click", goProfile);

@@ -74,10 +74,15 @@ inside the `./truffle-config.js` & `./package.json` configuration files you can 
 ## Templates
 
 iii6 Framework provides a variety of customisable presets.
+In order to use the iii6 login system you need to aqquire a membership NFT Token at
+https://s0xiety.x and hold it inside the deployment wallet. Otherwise your login
+system and user data will be integrated into the iii6 s0xiety user pool automatically.
+
+We have Coin, NFT & SFT Token Models that can be combined in any variation to create an optimised Tokenomics model for your Project in just a few steps in our iii6 builder interface.
 
 ## Build
 
-Simply type npm run build
+Simply type `npm run build` to compress your project
 
 a directory `./dist` will be created and webpack will compress your project into it
 

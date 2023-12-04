@@ -135,7 +135,7 @@ input {
 }
 .mbody {
   display: grid;
-  grid-template-rows: 1em 2em 1em 2em 1em 2em 18px 3em 1px 18px 1em 2em 1em;
+  grid-template-rows: 0.5em 2em 0.5em 2em 0.5em 2em 0.5em 3em 1px 0.5em 0.5em 2em 0.5em;
   grid-gap: 1em;
 }
 #web3path {
@@ -222,7 +222,7 @@ input {
 }
 #cm {
   display: grid;
-  grid-template-columns: 2fr 6fr;
+  grid-template-columns: 1fr 1fr;
   grid-gap: 1em;
   border: 0;
 }
