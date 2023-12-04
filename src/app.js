@@ -107,9 +107,7 @@ const mmSignUp = async (e) => {
   console.log(":: checking metamask user data ::");
   let profile = await S0X.showUser(user);
   const sign = await signer.signMessage(user);
-  let sig = ethers.utils.splitSignature(sign);
-  // let recovered = await S0X.verifyString(user, sig.v, sig.r, sig.s);
-  console.log(profile, sig);
+  console.log(profile);
   closeModal();
   let pro = JSON.parse(profile);
   account.innerText = pro.name;
@@ -120,7 +118,7 @@ const udSignUp = async (e) => {
   console.log(":: checking unstoppable user data ::");
 };
 const goProfile = () => {
-  console.log(":: checking unstoppable user data ::");
+  console.log(":: checking profile data ::");
 };
 const checkUser = async () => {
   const S0X = await s0xData();
