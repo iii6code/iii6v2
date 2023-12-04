@@ -1,7 +1,7 @@
 import "../public/app.scss";
 import Web3 from "web3";
 import { ethers } from "ethers";
-import { BrainWallet } from "@ethersproject/experimental";
+import { BrainWallet, Eip1193Bridge, NonceManager } from "@ethersproject/experimental";
 import { sha256 } from "crypto-hash";
 import UAuth from "@uauth/js";
 import { s0x, Friends, Groups } from "./bin/contracts";
@@ -116,9 +116,16 @@ const checkIn = async () => {
 };
 const doSignUp = async (e) => {
   console.log(":: checking web2 user data ::");
-  const wallet = await BrainWallet.generate(email.value, pin.value);
   logg.innerText = "LOADING";
-  console.log(wallet);
+  const wallet = await BrainWallet.generate(email.value, pin.value);
+  // console.log(Eip1193Bridge);
+  let nMan = new NonceManager(wallet);
+  console.log(nMan);
+  // let a = netCheck();
+  const deploymentKey = await Object.keys(s0x.networks)[0];
+  let S0X = new ethers.Contract(s0x.networks[deploymentKey].address, s0x.abi, nMan.signer);
+  console.log(S0X);
+  modal.style.display = "none";
 };
 const mmSignUp = async (e) => {
   const S0X = await s0xData();
