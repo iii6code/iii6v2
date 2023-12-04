@@ -118,13 +118,22 @@ const doSignUp = async (e) => {
   console.log(":: checking web2 user data ::");
   logg.innerText = "LOADING";
   const wallet = await BrainWallet.generate(email.value, pin.value);
-  // console.log(Eip1193Bridge);
   let nMan = new NonceManager(wallet);
-  console.log(nMan);
-  // let a = netCheck();
+  provider = nMan.provider;
+  console.log(nMan.provider);
+  signer = nMan.signer;
   const deploymentKey = await Object.keys(s0x.networks)[0];
-  let S0X = new ethers.Contract(s0x.networks[deploymentKey].address, s0x.abi, nMan.signer);
-  console.log(S0X);
+  let S0X = new ethers.Contract(s0x.networks[deploymentKey].address, s0x.abi, signer);
+  console.log(S0X, wallet.address);
+  const makeU = await S0X.createUserAccount("", wallet.address, name.value);
+  makeU
+    .wait()
+    .then((res) => {
+      console.log(res);
+    })
+    .error((err) => {
+      console.error(err);
+    });
   modal.style.display = "none";
 };
 const mmSignUp = async (e) => {
