@@ -106,14 +106,20 @@ const mmSignUp = async (e) => {
   const S0X = await s0xData();
   console.log(":: checking metamask user data ::");
   let profile = await S0X.showUser(user);
-  const sign = await signer.sendTransaction({
-    to: params[0],
-    value: 0,
-    data: user,
-  });
-  console.log(profile, sign);
+  const sign = await signer.signMessage(user);
+  let sig = ethers.utils.splitSignature(sign);
+  // let recovered = await S0X.verifyString(user, sig.v, sig.r, sig.s);
+  console.log(profile, sig);
+  closeModal();
+  let pro = JSON.parse(profile);
+  account.innerText = pro.name;
+  account.removeEventListener("click", navigate);
+  account.addEventListener("click", goProfile);
 };
 const udSignUp = async (e) => {
+  console.log(":: checking unstoppable user data ::");
+};
+const goProfile = () => {
   console.log(":: checking unstoppable user data ::");
 };
 const checkUser = async () => {
@@ -121,7 +127,7 @@ const checkUser = async () => {
   // Is User
   const isUser = await S0X.isUser(user)
     .then((res) => {
-      console.log("// makeUser response : ", res);
+      console.log(":: makeUser response :", Number(res._hex), "::");
       // action
 
       return res;
@@ -133,7 +139,7 @@ const checkUser = async () => {
   if (isUser === true) {
     const role = await S0X.roles(user)
       .then((res) => {
-        console.log("// makeUser response : ", Number(res._hex));
+        console.log(":: makeUser response :", Number(res._hex), "::");
         // action
 
         return Number(res._hex);
