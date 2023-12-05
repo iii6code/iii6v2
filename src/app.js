@@ -118,7 +118,8 @@ const mmLogin = async (e) => {
   console.log(profile);
   closeModal();
   let pro = JSON.parse(profile);
-  show.innerHTML = profile;
+  let showTemp = `<div id=''><input type='text' value=${pro.name} class='minp' /><input type='email' value=${pro.email} class='minp' /><input type='text' value=${pro.wallet} class='minp' /><input type='file' value=${pro.image} class='minp' /></div>`;
+  show.innerHTML = showTemp;
   account.innerText = pro.name;
   account.removeEventListener("click", navigate);
   account.addEventListener("click", goProfile);
@@ -138,13 +139,14 @@ const mmSignUp = async (e) => {
     network: net.chainId,
     wallet: user,
   };
-  const makeU = await S0X.createUserAccount(JSON.stringify(dias), user, name.value).then((res) => {
-    mm.innerText = "LOADING";
-    console.log("LOADING", res);
-  });
-  makeU.wait().then(async (res) => {
-    console.log(res);
-  });
+  const makeU = await S0X.createUserAccount(JSON.stringify(dias), user, name.value)
+    .then((res) => {
+      mm.innerText = "LOADING";
+      console.log("LOADING", res);
+    })
+    .catch((err) => {
+      console.error(err);
+    });
   closeModal();
   show.innerHTML = JSON.stringify(dias);
   account.innerText = name.value;
@@ -154,8 +156,16 @@ const mmSignUp = async (e) => {
 const udSignUp = async (e) => {
   console.log(":: checking unstoppable user data ::");
 };
-const goProfile = () => {
+const goProfile = async () => {
   console.log(":: checking profile data ::");
+  const S0X = await s0xData();
+  let profile = await S0X.showUser(user);
+  let pro = JSON.parse(profile);
+  let showTemp = `<div id=''><input type='text' value=${pro.name} class='minp' /><input type='email' value=${pro.email} class='minp' /><input type='text' value=${pro.wallet} class='minp' /><input type='file' value=${pro.image} class='minp' /></div>`;
+  show.innerHTML = showTemp;
+  account.innerText = pro.name;
+  account.removeEventListener("click", navigate);
+  account.addEventListener("click", goProfile);
 };
 const checkUser = async () => {
   const S0X = await s0xData();
@@ -201,7 +211,9 @@ const s0xData = async () => {
   return new ethers.Contract(s0x.networks[deploymentKey].address, s0x.abi, signer);
 };
 const connected = () => {};
+
 const loggedIn = () => {};
+
 const isMetaMaskInstalled = () => {
   //Have to check the ethereum binding on the window object to see if it's installed
   const { ethereum } = window;
