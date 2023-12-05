@@ -129,29 +129,25 @@ const udLogin = async (e) => {
 const mmSignUp = async (e) => {
   const S0X = await s0xData();
   console.log(":: creating user profile ::");
-  console.log(country[country.value]);
+  console.log();
   let dias = {
     name: name.value,
     email: email.value,
     mobile: "+" + String(country.value) + " " + String(mobile.value),
-    country: country.dataCountryCode,
+    country: country.value,
     network: net.chainId,
     wallet: user,
   };
-  let makeU = await S0X.createUserAccount(JSON.stringify(dias), user, name.value).then((res) => {
+  const makeU = await S0X.createUserAccount(JSON.stringify(dias), user, name.value).then((res) => {
     mm.innerText = "LOADING";
     console.log("LOADING", res);
   });
-  makeU
-    .wait()
-    .then((res) => {
-      closeModal();
-      show.innerHTML = JSON.stringify(dias);
-      account.innerText = name.value;
-    })
-    .error((err) => {
-      console.error(err);
-    });
+  makeU.wait().then(async (res) => {
+    console.log(res);
+  });
+  closeModal();
+  show.innerHTML = JSON.stringify(dias);
+  account.innerText = name.value;
   account.removeEventListener("click", navigate);
   account.addEventListener("click", goProfile);
 };
