@@ -53,7 +53,6 @@ const web2 = async () => {
   resetFormElements();
   mm.addEventListener("click", clickMM);
   ud.addEventListener("click", clickUD);
-  logg.addEventListener("click", doSignUp);
   modal.style.display = "grid";
 };
 const closeModal = () => {
@@ -92,51 +91,26 @@ const checkIn = async () => {
     resetFormElements();
     mm.addEventListener("click", mmSignUp);
     ud.addEventListener("click", udSignUp);
-    logg.addEventListener("click", doSignUp);
-  } else if (uData == 1) {
+  } else if (uData == 1 || uData == 2) {
     console.log(":: known user ::");
     modalbox.innerHTML = login;
     console.log(":: login user ::");
     resetFormElements();
-    mm.addEventListener("click", mmSignUp);
-    ud.addEventListener("click", udSignUp);
-    logg.addEventListener("click", doSignUp);
+    mm.addEventListener("click", mmLogin);
+    ud.addEventListener("click", udLogin);
   } else if (uData == 99) {
     console.log(":: admin user ::");
     modalbox.innerHTML = login;
     console.log(":: login user ::");
     resetFormElements();
-    mm.addEventListener("click", mmSignUp);
-    ud.addEventListener("click", udSignUp);
-    logg.addEventListener("click", doSignUp);
+    mm.addEventListener("click", mmLogin);
+    ud.addEventListener("click", udLogin);
   } else {
     web2();
   }
   modal.style.display = "grid";
 };
-const doSignUp = async (e) => {
-  console.log(":: checking web2 user data ::");
-  logg.innerText = "LOADING";
-  const wallet = await BrainWallet.generate(email.value, pin.value);
-  let nMan = new NonceManager(wallet);
-  provider = nMan.provider;
-  console.log(nMan.provider);
-  signer = nMan.signer;
-  const deploymentKey = await Object.keys(s0x.networks)[0];
-  let S0X = new ethers.Contract(s0x.networks[deploymentKey].address, s0x.abi, signer);
-  console.log(S0X, wallet.address);
-  const makeU = await S0X.createUserAccount("", wallet.address, name.value);
-  makeU
-    .wait()
-    .then((res) => {
-      console.log(res);
-    })
-    .error((err) => {
-      console.error(err);
-    });
-  modal.style.display = "none";
-};
-const mmSignUp = async (e) => {
+const mmLogin = async (e) => {
   const S0X = await s0xData();
   console.log(":: checking metamask user data ::");
   let profile = await S0X.showUser(user);
@@ -146,6 +120,38 @@ const mmSignUp = async (e) => {
   let pro = JSON.parse(profile);
   show.innerHTML = profile;
   account.innerText = pro.name;
+  account.removeEventListener("click", navigate);
+  account.addEventListener("click", goProfile);
+};
+const udLogin = async (e) => {
+  console.log(":: checking unstoppable user data ::");
+};
+const mmSignUp = async (e) => {
+  const S0X = await s0xData();
+  console.log(":: creating user profile ::");
+  console.log(country[country.value]);
+  let dias = {
+    name: name.value,
+    email: email.value,
+    mobile: "+" + String(country.value) + " " + String(mobile.value),
+    country: country.dataCountryCode,
+    network: net.chainId,
+    wallet: user,
+  };
+  let makeU = await S0X.createUserAccount(JSON.stringify(dias), user, name.value).then((res) => {
+    mm.innerText = "LOADING";
+    console.log("LOADING", res);
+  });
+  makeU
+    .wait()
+    .then((res) => {
+      closeModal();
+      show.innerHTML = JSON.stringify(dias);
+      account.innerText = name.value;
+    })
+    .error((err) => {
+      console.error(err);
+    });
   account.removeEventListener("click", navigate);
   account.addEventListener("click", goProfile);
 };
