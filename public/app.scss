@@ -8,7 +8,7 @@ html {
 body {
   height: 100%;
   width: 100%;
-  overflow: hidden;
+  overflow: auto;
   padding: 0;
   margin: 0;
 }
@@ -103,10 +103,10 @@ input {
   position: relative;
   top: 0;
   left: 0;
-  border: 1px dashed lightgrey;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 2fr 1fr 1fr 1fr 1fr;
+  grid-gap: 1em;
 }
 #modal {
   display: none;
@@ -228,4 +228,44 @@ input {
 #country {
   border-radius: 9px;
   border: 1px solid grey;
+}
+.pinp {
+  width: 200px;
+  grid-column: 2;
+  padding-left: 1em;
+  padding: 0em;
+}
+.pbtn {
+  width: calc(100% - 1em);
+  grid-column: 1;
+  grid-row: 6;
+  margin-left: 1em;
+  padding: 0;
+}
+.pimg {
+  grid-column: 1;
+  grid-row: 2/6;
+  width: calc(300px - 1em);
+  height: 100%;
+  margin-left: 1em;
+}
+h1 {
+  padding: 0;
+  margin: 0;
+}
+.pint {
+  width: 200px;
+  grid-column: 1/-1;
+  padding-left: 1em;
+  padding: 0.5em;
+}
+.pbtn {
+  border: 1px solid grey;
+  border-radius: 9px;
+  text-align: center;
+  background-color: mediumseagreen;
+  color: white;
+}
+.pbtn:hover {
+  background: darkgrey;
 }

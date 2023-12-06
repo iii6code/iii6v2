@@ -118,8 +118,10 @@ const mmLogin = async (e) => {
   console.log(profile);
   closeModal();
   let pro = JSON.parse(profile);
-  let showTemp = `<div id=''><input type='text' value=${pro.name} class='minp' /><input type='email' value=${pro.email} class='minp' /><input type='text' value=${pro.wallet} class='minp' /><input type='file' value=${pro.image} class='minp' /></div>`;
+  let showTemp = `<img src='' class='pimg'/><h1 class='pint'>Profile</h1><input type='text' id='name' value=${pro.name} class='pinp' disabled /><input id='email' type='email' value=${pro.email} class='pinp' /><input id='wallet' type='text' value=${pro.wallet} class='pinp' disabled /><textarea id='info' value=${pro.info} class='pinp'></textarea><input type='file' id="image" value=${pro.image} class='pinp' /><input type="hidden" id="mobile"/><input type="hidden" id="country"/><div id='edit' class='pbtn'>EDIT</div>`;
   show.innerHTML = showTemp;
+  const edit = document.getElementById("edit");
+  edit.addEventListener("click", goEdit);
   account.innerText = pro.name;
   account.removeEventListener("click", navigate);
   account.addEventListener("click", goProfile);
@@ -130,7 +132,6 @@ const udLogin = async (e) => {
 const mmSignUp = async (e) => {
   const S0X = await s0xData();
   console.log(":: creating user profile ::");
-  console.log();
   let dias = {
     name: name.value,
     email: email.value,
@@ -138,6 +139,8 @@ const mmSignUp = async (e) => {
     country: country.value,
     network: net.chainId,
     wallet: user,
+    info: "",
+    image: "",
   };
   const makeU = await S0X.createUserAccount(JSON.stringify(dias), user, name.value)
     .then((res) => {
@@ -160,12 +163,43 @@ const goProfile = async () => {
   console.log(":: checking profile data ::");
   const S0X = await s0xData();
   let profile = await S0X.showUser(user);
+  console.log(profile);
   let pro = JSON.parse(profile);
-  let showTemp = `<div id=''><input type='text' value=${pro.name} class='minp' /><input type='email' value=${pro.email} class='minp' /><input type='text' value=${pro.wallet} class='minp' /><input type='file' value=${pro.image} class='minp' /></div>`;
+
+  let showTemp = `<img src='' class='pimg'/><h1 class='pint'>Profile</h1><input type='text' id='name' value=${pro.name} class='pinp' disabled /><input id='email' type='email' value=${pro.email} class='pinp' /><input id='wallet' type='text' value=${pro.wallet} class='pinp' disabled /><textarea id='info' value=${pro.info} class='pinp'></textarea><input type='file' id="image" value=${pro.image} class='pinp' /><input type="hidden" id="mobile"/><input type="hidden" id="country"/><div id='edit' class='pbtn'>EDIT</div>`;
   show.innerHTML = showTemp;
+  const edit = document.getElementById("edit");
+  edit.addEventListener("click", goEdit);
   account.innerText = pro.name;
   account.removeEventListener("click", navigate);
   account.addEventListener("click", goProfile);
+};
+const goEdit = async () => {
+  console.log(":: edit user account data ::");
+  const S0X = await s0xData();
+  resetFormElements();
+  let profile = await S0X.showUser(user);
+  console.log(profile);
+  let pro = JSON.parse(profile);
+  let dias = {
+    name: pro.name,
+    email: email.value,
+    mobile: pro.mobile,
+    country: pro.country,
+    network: pro.network,
+    wallet: pro.wallet,
+    info: info.value,
+    image: image.value,
+  };
+  console.log(JSON.stringify(dias), dias);
+  const edit = await S0X.editUser(JSON.stringify(dias))
+    .then((res) => {
+      console.log(res);
+    })
+    .catch((err) => {
+      console.error(err);
+    });
+  goProfile();
 };
 const checkUser = async () => {
   const S0X = await s0xData();
@@ -207,7 +241,7 @@ const netCheck = () => {
 const s0xData = async () => {
   let a = netCheck();
   const deploymentKey = await Object.keys(s0x.networks)[a];
-  console.log(net, deploymentKey, s0x.networks);
+  // console.log(net, deploymentKey, s0x.networks);
   return new ethers.Contract(s0x.networks[deploymentKey].address, s0x.abi, signer);
 };
 const connected = () => {};
