@@ -303,6 +303,19 @@ h1 {
 #diasinf {
   grid-row: 7/10;
 }
+#desdyn,
+#desdapps {
+  grid-row: 1/-1;
+}
+#coinbuild {
+  grid-row: 1/4;
+}
+#nftbuild {
+  grid-row: 4/7;
+}
+#sftbuild {
+  grid-row: 7/10;
+}
 .barpost:hover,
 .boxpost1:hover,
 .boxpost2:hover {
