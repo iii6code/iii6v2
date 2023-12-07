@@ -6,7 +6,7 @@ import { sha256 } from "crypto-hash";
 import UAuth from "@uauth/js";
 import { s0x, Friends, Groups } from "./bin/contracts";
 import { bg, dev_inf, stage, nav, head, move, modal, modalbox, foot } from "./bin/mainelements";
-import { resetFormElements, name, email, country, mobile, pin, mm, ud, logg, closer } from "./bin/formelements";
+import { resetFormElements, name, email, country, mobile, mm, ud, closer, status } from "./bin/formelements";
 import { iii6, design, develop, launch, info, account, token, network } from "./bin/navelements";
 import { show } from "./bin/dynelements";
 import { login, signup, edit } from "./bin/forms";
@@ -111,20 +111,10 @@ const checkIn = async () => {
   modal.style.display = "grid";
 };
 const mmLogin = async (e) => {
-  const S0X = await s0xData();
   console.log(":: checking metamask user data ::");
-  let profile = await S0X.showUser(user);
   const sign = await signer.signMessage(user);
-  console.log(profile);
   closeModal();
-  let pro = JSON.parse(profile);
-  let showTemp = `<img src='' class='pimg'/><h1 class='pint'>Profile</h1><input type='text' id='name' value=${pro.name} class='pinp' disabled /><input id='email' type='email' value=${pro.email} class='pinp' /><input id='wallet' type='text' value=${pro.wallet} class='pinp' disabled /><textarea id='info' value=${pro.info} class='pinp'></textarea><input type='file' id="image" value=${pro.image} class='pinp' /><input type="hidden" id="mobile"/><input type="hidden" id="country"/><div id='edit' class='pbtn'>EDIT</div>`;
-  show.innerHTML = showTemp;
-  const edit = document.getElementById("edit");
-  edit.addEventListener("click", goEdit);
-  account.innerText = pro.name;
-  account.removeEventListener("click", navigate);
-  account.addEventListener("click", goProfile);
+  goProfile();
 };
 const udLogin = async (e) => {
   console.log(":: checking unstoppable user data ::");
@@ -139,8 +129,8 @@ const mmSignUp = async (e) => {
     country: country.value,
     network: net.chainId,
     wallet: user,
-    info: "",
-    image: "",
+    info: "new s0xiety member",
+    image: "QmQQUgGnzAaySRbUphGgjPtT49JMMHydX74AhG98DnEi6Q",
   };
   const makeU = await S0X.createUserAccount(JSON.stringify(dias), user, name.value)
     .then((res) => {
@@ -151,7 +141,7 @@ const mmSignUp = async (e) => {
       console.error(err);
     });
   closeModal();
-  show.innerHTML = JSON.stringify(dias);
+  goProfile();
   account.innerText = name.value;
   account.removeEventListener("click", navigate);
   account.addEventListener("click", goProfile);
@@ -162,17 +152,22 @@ const udSignUp = async (e) => {
 const goProfile = async () => {
   console.log(":: checking profile data ::");
   const S0X = await s0xData();
-  let profile = await S0X.showUser(user);
-  console.log(profile);
-  let pro = JSON.parse(profile);
-
-  let showTemp = `<img src='' class='pimg'/><h1 class='pint'>Profile</h1><input type='text' id='name' value=${pro.name} class='pinp' disabled /><input id='email' type='email' value=${pro.email} class='pinp' /><input id='wallet' type='text' value=${pro.wallet} class='pinp' disabled /><textarea id='info' value=${pro.info} class='pinp'></textarea><input type='file' id="image" value=${pro.image} class='pinp' /><input type="hidden" id="mobile"/><input type="hidden" id="country"/><div id='edit' class='pbtn'>EDIT</div>`;
-  show.innerHTML = showTemp;
-  const edit = document.getElementById("edit");
-  edit.addEventListener("click", goEdit);
-  account.innerText = pro.name;
-  account.removeEventListener("click", navigate);
-  account.addEventListener("click", goProfile);
+  const profile = await S0X.showUser(user)
+    .then((res) => {
+      // console.log(res);
+      let pro = JSON.parse(res);
+      let showTemp = `<img src='https://ipfs.io/ipfs/${pro.image}' class='pimg'/><h1 class='pint'>Profile</h1><input type='text' id='name' value=${pro.name} class='pinp' disabled /><input id='email' type='email' value=${pro.email} class='pinp' /><input id='wallet' type='text' value=${pro.wallet} class='pinp' disabled /><input id='status' placeholder='info' class='pinp' value='${pro.info}' /><input type='file' id="image" value=${pro.image} class='pinp' disabled /><input type="hidden" id="imageholder" value="${pro.image}"/><div id='edit' class='pbtn'>EDIT</div>`;
+      show.innerHTML = showTemp;
+      const edit = document.getElementById("edit");
+      edit.addEventListener("click", goEdit);
+      account.innerText = pro.name;
+      account.removeEventListener("click", navigate);
+      account.addEventListener("click", goProfile);
+      return res;
+    })
+    .catch((err) => {
+      console.error(err);
+    });
 };
 const goEdit = async () => {
   console.log(":: edit user account data ::");
@@ -181,6 +176,7 @@ const goEdit = async () => {
   let profile = await S0X.showUser(user);
   console.log(profile);
   let pro = JSON.parse(profile);
+  console.log(pro);
   let dias = {
     name: pro.name,
     email: email.value,
@@ -188,11 +184,19 @@ const goEdit = async () => {
     country: pro.country,
     network: pro.network,
     wallet: pro.wallet,
-    info: info.value,
-    image: image.value,
+    info: status.value,
+    image: imageholder.value,
   };
-  console.log(JSON.stringify(dias), dias);
+  console.log(dias);
   const edit = await S0X.editUser(JSON.stringify(dias))
+    .then((res) => {
+      console.log(res);
+    })
+    .catch((err) => {
+      console.error(err);
+    });
+  edit
+    .wait()
     .then((res) => {
       console.log(res);
     })
@@ -278,5 +282,6 @@ const MetaMaskClientCheck = () => {
 };
 const web3init = async () => {
   MetaMaskClientCheck();
+  show.innerHTML = iii6_stage;
 };
 document.addEventListener("DOMContentLoaded", loaded);
