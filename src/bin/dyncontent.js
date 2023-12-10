@@ -46,5 +46,20 @@ export const develop_stage = `
   <div id='' class='txt'></div>
   <img src='' class="img" />
 </div>`;
-export const launch_stage = `<div id='showbody'>launch</div>`;
+export const launch_stage = `
+<div id="oracles" class="boxpost1">
+  <h1 id="" class="title">Test Your Project Launch</h1>
+  <div id='' class='txt'></div>
+  <img src='' class="img" />
+</div>
+<div id="external" class="boxpost2">
+  <h1 id="" class="title"></h1>
+  <div id='' class='txt'></div>
+  <img src='' class="img" />
+</div>
+<div id="diasinf" class="barpost">
+  <h1 id="" class="title">Multichain Tokenomics Deployment</h1>
+  <div id='' class='txt'></div>
+  <img src='' class="img" />
+</div>`;
 export const info_stage = `<div id='showbody'>info</div>`;
