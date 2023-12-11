@@ -23,7 +23,7 @@ input {
 }
 .imgfull {
   grid-column: 1/ -1;
-  grid-row: 3;
+  grid-row: 2;
   border-radius: 9px;
   max-width: 100%;
 }
@@ -33,14 +33,14 @@ input {
   font-size: 1.5em;
 }
 .txtfull {
-  grid-row: 2;
+  grid-row: 3;
   grid-column: 1/-1;
-  font-size: 3em;
+  font-size: 1.5em;
 }
 .title {
   grid-row: 1;
   grid-column: 1/-1;
-  font-size: 2em;
+  font-size: 2.3em;
   text-decoration: underline;
 }
 .stage {
@@ -310,31 +310,31 @@ h1 {
   border: 1px solid grey;
   padding: 1em;
   display: grid;
-  grid-template-rows: 22px 400px;
+  grid-template-rows: 22px;
   grid-template-columns: 60% 1fr;
   grid-gap: 1em;
 }
 .boxpost1 {
   margin-top: 1em;
-  grid-column: 1/4;
+  grid-column: 1/5;
   grid-row: 1/4;
   border-radius: 9px;
   border: 1px solid grey;
   padding: 1em;
   display: grid;
-  grid-template-rows: 22px 400px;
+  grid-template-rows: 22px;
   grid-template-columns: 60% 1fr;
   grid-gap: 1em;
 }
 .boxpost2 {
   margin-top: 1em;
-  grid-column: 4/-1;
+  grid-column: 5/-1;
   grid-row: 1/4;
   border-radius: 9px;
   border: 1px solid grey;
   padding: 1em;
   display: grid;
-  grid-template-rows: 22px 400px;
+  grid-template-rows: 22px;
   grid-template-columns: 60% 1fr;
   grid-gap: 1em;
 }

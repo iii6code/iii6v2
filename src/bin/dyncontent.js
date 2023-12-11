@@ -22,7 +22,7 @@ Real-world data oracles in Web3 bridge blockchain with external info for decentr
 </div>`;
 export const design_stage = `
 <div id='desdyn' class='boxpost1'>
-    <h1 id='' class='title'>Codebender Dynamic NFTs Editor</h1>
+    <h1 id='' class='title'>Dynamic NFTs Editor</h1>
     <div id='' class='txt'></div>
     <img src='' class='img' />
 </div>
