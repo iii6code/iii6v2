@@ -1,24 +1,24 @@
 export const iii6_stage = `
 <div id='oracles' class='boxpost1'>
     <h1 id='' class='title'>Real World Data Oracles</h1>
-    <div id='' class='txt'>
+    <div id='' class='txtfull'>
 Real-world data oracles in Web3 bridge blockchain with external info for decentralized apps. Chainlink, a key player, ensures trust via node consensus. Vital for DApps' reliance on real-world events. #Web3 #DataOracles</div>
-    <img src='' class='img' />
+    <img src='./images/delphi.jpeg' class="imgfull" />
 </div>
 <div id='external' class='boxpost2'>
     <h1 id='' class='title'>Trigger external Contracts</h1>
-    <div id='' class='txt'>DIAS Assets interact with external contracts, enhancing capabilities and data exchange. Smart contracts communicate for a decentralized network, fostering collaboration in the blockchain ecosystem. #DApps #SmartContracts #BlockchainInteroperability</div>
-    <img src='' class='img' />
+    <div id='' class='txtfull'>DIAS Assets interact with external contracts, enhancing capabilities and data exchange. Smart contracts communicate for a decentralized network, fostering collaboration in the blockchain ecosystem. #DApps #SmartContracts #BlockchainInteroperability</div>
+    <img src='' class='imgfull' />
 </div>
 <div id='dynft' class='barpost'>
     <h1 id='' class='title'>Design, Build & Launch dynamic NFTs</h1>
-    <div id='' class='txt'>Designing, building, and launching Dynamic NFTs involves creative ideation, smart contract development, and strategic deployment. This process merges art with functionality, offering unique, programmable digital assets that evolve over time. #DynamicNFTs #BlockchainArt</div>
+    <div id='' class='txtfull'>Designing, building, and launching Dynamic NFTs involves creative ideation, smart contract development, and strategic deployment. This process merges art with functionality, offering unique, programmable digital assets that evolve over time. #DynamicNFTs #BlockchainArt</div>
     <img src='' class='img' />
 </div>
 <div id='diasinf' class='barpost'>
     <h1 id='' class='title'>Decentral Interactive Asset Standard [DIAS]</h1>
     <div id='' class='txt'></div>
-    <img src='' class='img' />
+    <img src='./images/dias.png' class='img' />
 </div>`;
 export const design_stage = `
 <div id='desdyn' class='boxpost1'>
@@ -51,17 +51,26 @@ Developing custom dynamic NFT contracts demands meticulous coding. Integrate fea
 export const launch_stage = `
 <div id="oracles" class="boxpost1">
   <h1 id="" class="title">Test Your Project Launch</h1>
-  <div id='' class='txt'></div>
-  <img src='' class="img" />
+  <div id='' class='txtfull'>Thoroughly test your DApp and project launch logic to ensure reliability and security. Rigorous testing, including unit, integration, and user acceptance tests, mitigates risks and enhances the robustness of your decentralized application. #DAppTesting #ProjectLaunchLogic</div>
 </div>
 <div id="external" class="boxpost2">
-  <h1 id="" class="title"></h1>
-  <div id='' class='txt'></div>
-  <img src='' class="img" />
+  <h1 id="" class="title">AI Contract Audits</h1>
+  <div id='' class='txt'>
+AI-powered smart contract and DApp audits offer enhanced security. Automated tools scan for vulnerabilities, ensuring code integrity and reducing human error. Continuous monitoring fortifies against emerging threats, providing a resilient foundation for decentralized applications. #AIAudits #SmartContracts</div>
+  <img src='./images/AIaudit.jpeg' class="img" />
 </div>
-<div id="diasinf" class="barpost">
+<div id="multichain" class="barpost">
   <h1 id="" class="title">Multichain Tokenomics Deployment</h1>
-  <div id='' class='txt'></div>
+  <div id='' class='txtfull'>Multichain Tokenomics involves strategic design across diverse blockchains. Tailor supply, distribution, and governance for efficiency. Development requires precise smart contract coding to ensure seamless interaction and interoperability, fostering a resilient token ecosystem. #MultichainTokenomics #SmartContractDevelopment</div>
   <img src='' class="img" />
 </div>`;
-export const info_stage = `<div id='showbody'>info</div>`;
+export const info_stage = `<div id="infotab" class="barpost">
+  <h1 id="" class="title">iii6 & Friends</h1>
+  <div id='' class='txt'></div>
+  <img src='' class="imgfull" />
+</div>
+<div id="imprint" class="barpost">
+  <h1 id="" class="title">iii6 Development DAO</h1>
+  <div id='' class='txt'></div>
+  <img src='./images/logo.png' class="img" />
+</div>`;
