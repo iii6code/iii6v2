@@ -1,23 +1,20 @@
 export const iii6_stage = `
 <div id='oracles' class='boxpost1'>
-    <h1 id='' class='title'>The Interactive dApp Framework</h1>
-    <div id='' class='txtfull'>
-Real-world data oracles in Web3 bridge blockchain with external info for decentralized apps. Chainlink, a key player, ensures trust via node consensus. Vital for DApps' reliance on real-world events. #Web3 #DataOracles</div>
+<h1 id='' class='title'>Interactive Design</h1>
+<img src='./images/assets.gif' class='imgfull' />
 </div>
 <div id='external' class='boxpost2'>
-    <h1 id='' class='title'>Tokenise your Products & Services</h1>
-    <div id='' class='txtfull'>DIAS Assets interact with external contracts, enhancing capabilities and data exchange. Smart contracts communicate for a decentralized network, fostering collaboration in the blockchain ecosystem. #DApps #SmartContracts #BlockchainInteroperability</div>
-    <img src='' class='imgfull' />
+<h1 id='' class='title'>Tokenize Everything</h1>
+<img src='./images/pns.gif' class='imgfull' />
 </div>
 <div id='dynft' class='barpost'>
     <h1 id='' class='title'>Design, Build & Launch dynamic NFTs</h1>
-    <div id='' class='txtfull'>Designing, building, and launching Dynamic NFTs involves creative ideation, smart contract development, and strategic deployment. This process merges art with functionality, offering unique, programmable digital assets that evolve over time. #DynamicNFTs #BlockchainArt</div>
-    <img src='' class='img' />
+    <img src='./images/DESIGN.gif' class='imgfull' />
 </div>
 <div id='diasinf' class='barpost'>
     <h1 id='' class='title'>Decentral Interactive Asset Standard [DIAS]</h1>
     <div id='' class='txt'></div>
-    <img src='./images/dias.png' class='img' />
+    <img src='./images/dias.gif' class='imgfull' />
 </div>`;
 export const design_stage = `
 <div id='desdyn' class='boxpost1'>
