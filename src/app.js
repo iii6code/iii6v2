@@ -7,10 +7,10 @@ import UAuth from "@uauth/js";
 import { s0x, Friends, Groups } from "./bin/contracts";
 import { bg, dev_inf, stage, nav, head, move, modal, modalbox, foot } from "./bin/mainelements";
 import { resetFormElements, name, email, country, mobile, mm, ud, closer, status } from "./bin/formelements";
-import { iii6, design, develop, launch, info, account, token, network } from "./bin/navelements";
+import { lp, explore, shop, create, essence, account, token, network } from "./bin/navelements";
 import { show } from "./bin/dynelements";
 import { login, signup, edit } from "./bin/forms";
-import { iii6_stage, design_stage, develop_stage, launch_stage, info_stage } from "./bin/dyncontent";
+import { lp_stage, explore_stage, shop_stage, create_stage, essence_stage } from "./bin/dyncontent";
 
 const client = require("ipfs-http-client");
 const ipfs = client.create({
@@ -29,16 +29,16 @@ let signer;
 
 const navigate = async (e) => {
   console.log(":: target :", e.target.id, "::");
-  if (e.target.id == "iii6") {
-    show.innerHTML = iii6_stage;
-  } else if (e.target.id == "design") {
-    show.innerHTML = design_stage;
-  } else if (e.target.id == "develop") {
-    show.innerHTML = develop_stage;
-  } else if (e.target.id == "launch") {
-    show.innerHTML = launch_stage;
-  } else if (e.target.id == "info") {
-    show.innerHTML = info_stage;
+  if (e.target.id == "lp") {
+    show.innerHTML = lp_stage;
+  } else if (e.target.id == "explore") {
+    show.innerHTML = explore_stage;
+  } else if (e.target.id == "shop") {
+    show.innerHTML = shop_stage;
+  } else if (e.target.id == "create") {
+    show.innerHTML = create_stage;
+  } else if (e.target.id == "essence") {
+    show.innerHTML = essence_stage;
   } else if (e.target.id == "account") {
     checkIn();
   } else if (e.target.id == "token") {
@@ -60,11 +60,11 @@ const closeModal = () => {
 };
 const loaded = () => {
   console.log(":: loaded iii6v2 framework ::");
-  iii6.addEventListener("click", navigate);
-  design.addEventListener("click", navigate);
-  develop.addEventListener("click", navigate);
-  launch.addEventListener("click", navigate);
-  info.addEventListener("click", navigate);
+  lp.addEventListener("click", navigate);
+  explore.addEventListener("click", navigate);
+  shop.addEventListener("click", navigate);
+  create.addEventListener("click", navigate);
+  essence.addEventListener("click", navigate);
   token.addEventListener("click", navigate);
   network.addEventListener("click", navigate);
   closer.addEventListener("click", closeModal);
@@ -273,15 +273,15 @@ const MetaMaskClientCheck = () => {
   if (!isMetaMaskInstalled()) {
     //If it isn't installed we ask the user to click to install it
     account.addEventListener("click", web2);
-    account.innerText = "CONNECT";
+    account.innerText = "Members";
   } else {
     //If it is installed we change our button text
-    account.innerText = "CONNECT";
+    account.innerText = "Members";
   }
   console.log(":: iii6v2 web3 initialised ::");
 };
 const web3init = async () => {
   MetaMaskClientCheck();
-  show.innerHTML = iii6_stage;
+  show.innerHTML = lp_stage;
 };
 document.addEventListener("DOMContentLoaded", loaded);
