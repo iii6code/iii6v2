@@ -100,8 +100,7 @@ body {
     display: grid;
     grid-template-columns: 2fr 2fr 2fr;
     grid-gap: 1em;
-    background: grey;
-    color: white;
+    color: black;
     #filter {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -113,6 +112,11 @@ body {
     }
     .sel {
       width: 100%;
+    }
+    #prev,
+    #current,
+    #next {
+      text-align: center;
     }
   }
   #pages {
@@ -143,6 +147,11 @@ body {
         background: rgba(black, 0.5);
         color: white;
         padding-left: 1em;
+        overflow: hidden;
+      }
+      .title:hover {
+        grid-row: 1/-1;
+        z-index: 1111;
       }
       .price {
         grid-row: 3;

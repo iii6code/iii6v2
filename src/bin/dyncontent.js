@@ -26,21 +26,34 @@ export const shop_stage = `
 <div id="itemlist" class="items">
     <div id="item1" class="item">
         <img src="./images/dias/items/0.png" id="img1" class="itempic" />
-        <div id="title1" class="title">ITEM 1</div>
+        <div id="title1" class="title">ITEM 1<hr>this is the description</div>
         <div id="price1" class="price">55Matic</div>
 
     </div>
     <div id="item2" class="item">
         <img src="./images/dias/items/0.png" id="img2" class="itempic" />
-        <div id="title2" class="title">ITEM 2</div>
+        <div id="title2" class="title">ITEM 2<hr>this is the description</div>
         <div id="price2" class="price">55Matic</div>
 
     </div>
 </div>
 <div id="pages" class="menu">
-    <div id="prev"></div>
-    <div id="current"></div>
-    <div id="next"></div>
+    <div id="prev">
+    <input type="button" id="ftab" value="1" class="sbtn" />
+    <input type="button" id="first" value="<<" class="sbtn" />
+    <input type="button" id="ptab" value="10" class="sbtn" />
+    <input type="button" id="prev" value="<" class="sbtn" />
+    </div>
+    <div id="current">
+        <input type="button" id="next" value="Page 11" class="sbtn" />
+    </div>
+    <div id="next">
+
+    <input type="button" id="next" value=">" class="sbtn" />
+    <input type="button" id="ntab" value="12" class="sbtn" />
+    <input type="button" id="last" value=">>" class="sbtn" />
+    <input type="button" id="ltab" value="99" class="sbtn" />
+    </div>
 </div>
 </div>
 `;
