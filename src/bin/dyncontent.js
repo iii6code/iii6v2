@@ -4,10 +4,14 @@ export const shop_stage = `
 <div id="shop" class="stage">
 <div id="sidebar" class="fullheight"></div>
 <div id="shopnav" class="menu">
-    <div id="filter"></div>
+    <div id="filter">
+        <input type="checkbox" id="new" class="chb" /><i>New</i>
+        <input type="checkbox" id="star" class="chb" /><i>Star</i>
+        <input type="checkbox" id="dlx" class="chb" /><i>Dlx</i>
+    </div>
     <div id="search">
         <input type="text" id="seek" class="sbar" placeholder="search" />
-        <input type="button" id="seekbtn" class="sbtn" placeholder="search" />
+        <input type="button" id="seekbtn" class="sbtn" />
     </div>
     <div id="sort">
         <select id="sort" class="sel">
@@ -16,16 +20,22 @@ export const shop_stage = `
             <option id="newasc" value="newasc">Newest</option>
             <option id="newdesc" value="newdesc">Oldest</option>
         </select>
+        <input type="button" id="layout" class="mode"/>
     </div>
 </div>
 <div id="itemlist" class="items">
     <div id="item1" class="item">
         <img src="./images/dias/items/0.png" id="img1" class="itempic" />
-        <div id="title" class="title">ITEM 1</div>
+        <div id="title1" class="title">ITEM 1</div>
         <div id="price1" class="price">55Matic</div>
 
     </div>
-    <div id="item2" class="item"></div>
+    <div id="item2" class="item">
+        <img src="./images/dias/items/0.png" id="img2" class="itempic" />
+        <div id="title2" class="title">ITEM 2</div>
+        <div id="price2" class="price">55Matic</div>
+
+    </div>
 </div>
 <div id="pages" class="menu">
     <div id="prev"></div>
