@@ -81,6 +81,88 @@ body {
     border: 1px solid black;
   }
 }
+.stage {
+  width: calc(100%);
+  min-height: 500px;
+  padding: 1em;
+  position: absolute;
+  top: 80px;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: 28px 1fr 28px;
+  grid-gap: 1em;
+  .fullheight {
+    grid-row: 1/-1;
+    background: darkgray;
+  }
+  .menu {
+    grid-column: 2/-1;
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr;
+    grid-gap: 1em;
+    background: grey;
+    color: white;
+    #search {
+      display: grid;
+      grid-template-columns: 1fr 28px;
+      .sbar,
+      .sbtn {
+        padding: 0;
+        margin: 0;
+        align-self: flex-start;
+      }
+    }
+    .sel {
+      width: 100%;
+    }
+  }
+  #pages {
+    grid-row: 3 !important;
+  }
+  .items {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 2fr 2fr;
+    grid-gap: 1em;
+    .item {
+      max-height: 200px;
+      background: grey;
+      border-radius: 9px;
+      display: grid;
+      grid-template-rows: 20px 1fr 40px;
+      overflow: hidden;
+      .itempic {
+        grid-row: 1/-1;
+        grid-column: 1/-1;
+        width: auto;
+        max-height: 200px;
+        justify-self: center;
+      }
+      .title {
+        grid-row: 1;
+        grid-column: 1/-1;
+        background: rgba(black, 0.5);
+        color: white;
+        padding-left: 1em;
+      }
+      .price {
+        grid-row: 3;
+        grid-column: 1/-1;
+        font-weight: 900;
+        padding-right: 1em;
+        justify-self: stretch;
+        font-size: 1.8em;
+        background: rgba(white, 0.5);
+        border-radius: 9px 9px 0 0;
+        text-align: center;
+      }
+      .price:hover {
+        background: rgba(mediumseagreen, 0.5);
+        color: white;
+      }
+    }
+  }
+}
 #foot {
   position: absolute;
   left: 0;
