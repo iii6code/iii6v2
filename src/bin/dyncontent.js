@@ -1,7 +1,6 @@
-export const lp_stage = ``;
+export const lp_stage = `<div id="lp" class="stage"></div>`;
 export const explore_stage = ``;
-export const shop_stage = `
-<div id="shop" class="stage">
+export const shop_stage = `<div id="shop" class="stage">
 <div id="sidebar" class="fullheight"></div>
 <div id="shopnav" class="menu">
     <div id="filter">
@@ -28,49 +27,41 @@ export const shop_stage = `
         <img src="./images/dias/items/0.png" id="img1" class="itempic" />
         <div id="title1" class="title">ITEM 1<hr>this is the description</div>
         <div id="price1" class="price">55Matic</div>
-
     </div>
     <div id="item2" class="item">
         <img src="./images/dias/items/0.png" id="img2" class="itempic" />
         <div id="title2" class="title">ITEM 2<hr>this is the description</div>
         <div id="price2" class="price">55Matic</div>
-
     </div>
     <div id="item3" class="item">
         <img src="./images/dias/items/0.png" id="img3" class="itempic" />
         <div id="title3" class="title">ITEM 3<hr>this is the description</div>
         <div id="price3" class="price">55Matic</div>
-
     </div>
     <div id="item4" class="item">
         <img src="./images/dias/items/0.png" id="img4" class="itempic" />
         <div id="title4" class="title">ITEM 4<hr>this is the description</div>
         <div id="price4" class="price">55Matic</div>
-
     </div>
     <div id="item5" class="item">
         <img src="./images/dias/items/0.png" id="img5" class="itempic" />
         <div id="title5" class="title">ITEM 5<hr>this is the description</div>
         <div id="price5" class="price">55Matic</div>
-
     </div>
     <div id="item6" class="item">
         <img src="./images/dias/items/0.png" id="img6" class="itempic" />
         <div id="title6" class="title">ITEM 6<hr>this is the description</div>
         <div id="price6" class="price">55Matic</div>
-
     </div>
     <div id="item7" class="item">
         <img src="./images/dias/items/0.png" id="img7" class="itempic" />
         <div id="title7" class="title">ITEM 7<hr>this is the description</div>
         <div id="price7" class="price">55Matic</div>
-
     </div>
     <div id="item8" class="item">
         <img src="./images/dias/items/0.png" id="img8" class="itempic" />
         <div id="title8" class="title">ITEM 8<hr>this is the description</div>
         <div id="price8" class="price">55Matic</div>
-
     </div>
 </div>
 <div id="pages" class="menu">
@@ -84,15 +75,13 @@ export const shop_stage = `
         <input type="button" id="next" value="Page 11" class="sbtn" />
     </div>
     <div id="next">
-
     <input type="button" id="next" value=">" class="sbtn" />
     <input type="button" id="ntab" value="12" class="sbtn" />
     <input type="button" id="last" value=">>" class="sbtn" />
     <input type="button" id="ltab" value="99" class="sbtn" />
     </div>
 </div>
-</div>
-`;
+</div>`;
 export const create_stage = ``;
 export const essence_stage = ``;
 export const _2d_stage = ``;
