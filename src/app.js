@@ -21,7 +21,6 @@ let balance;
 let provider;
 let signer;
 
-
 const connected = () => {};
 
 const loggedIn = () => {};
@@ -41,10 +40,3 @@ const clickUD = (e) => {
   alert("You are being redirected to the official Unstoppable Domains Website ... You will need an UDDomain to continue this path.");
   window.open("https://unstoppabledomains.com");
 };
-
-
-$("#mobile_code").intlTelInput({
-	initialCountry: "de",
-	separateDialCode: true,
-	// utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/11.0.4/js/utils.js"
-});
