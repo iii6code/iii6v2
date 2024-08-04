@@ -22,9 +22,7 @@ h3 {
   margin: 0;
   text-align: left;
 }
-ul {
-  list-style: none;
-}
+
 .stage {
   display: grid;
   grid-template-columns: 1em 1fr 1fr 1fr 1em;
@@ -48,9 +46,16 @@ ul {
   grid-row: 3;
   grid-column: 2/-2;
 }
+
 .list {
   display: grid;
   grid-template-rows: 1fr;
+}
+.li {
+  border: 1px solid darkcyan;
+  border-radius: 9px;
+  margin-bottom: 1em;
+  padding: 1em;
 }
 .btn {
   grid-row: 4;
