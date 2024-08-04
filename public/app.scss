@@ -52,56 +52,52 @@ body {
   justify-content: center;
 }
 .form-area .form-inner {
-  width: 100%;
+
+    width: 100%;
 }
 .form-control {
-  display: block;
-  width: calc(100%);
-  height: auto;
-  padding: 15px 19px;
-  font-size: 1rem;
-  line-height: 1.4;
-  color: #475f7b;
-  background-color: #fff;
-  border: 1px solid #dfe3e7;
-  border-radius: 0.267rem;
-  -webkit-transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    display: block;
+    width: calc(100%);
+    height: auto;
+    padding: 15px 19px;
+    font-size: 1rem;
+    line-height: 1.4;
+    color: #475F7B;
+    background-color: #FFF;
+    border: 1px solid #DFE3E7;
+    border-radius: .267rem;
+    -webkit-transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
 .form-control:focus {
-  color: DarkCyan;
-  background-color: #fff;
-  border-color: #5a8dee;
-  outline: 0;
-  box-shadow: 0 3px 8px 0 rgb(0 0 0 / 10%);
+    color: DarkCyan;
+    background-color: #FFF;
+    border-color: #5A8DEE;
+    outline: 0;
+    box-shadow: 0 3px 8px 0 rgb(0 0 0 / 10%);
 }
-.btn {
-  background: LightSalmon;
-  color: Lavender;
+.btn{
+  background:LightSalmon;
+  color:Lavender;
   display: block;
-  width: 100%;
-  height: auto;
-  padding: 15px 19px;
-  font-size: 2em;
-  font-weight: 900;
-  line-height: 1.4;
-  border-radius: 9px;
+    width: 100%;
+    height: auto;
+    padding: 15px 19px;
+    font-size: 2em;
+    font-weight:900;
+    line-height: 1.4;
+  border-radius:9px;
 }
-.btn:hover {
-  background: Lavender;
-  color: LightSalmon;
-}
+.btn:hover{background:Lavender;color:LightSalmon;}
 .intl-tel-input,
-.iti {
+.iti{
   width: 100%;
 }
-.third {
-  width: calc((32%) - (3em / 4));
-  margin-right: 1em;
-  display: inline;
-}
-.third:last-child {
-  margin-right: 0em;
+.third{
+  width: calc((32%) - (4em / 4));
+  margin-right:1em;
+  display:inline;
+>>>>>>> 8741ed3b0d0e482d9d7dc74d157b817824794949
 }
 
 #real:valid,
