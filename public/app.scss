@@ -4,6 +4,7 @@ body {
   height: 100%;
   margin: 0px auto;
   font-family: Roboto;
+  background: lightslategrey;
 }
 h1,
 h2,
@@ -66,19 +67,19 @@ h3 {
   border: 1px solid darkcyan;
 }
 .ii:invalid {
-  border: 1px solid lightsalmon;
+  border: 1px solid tomato;
 }
 .btn {
   grid-row: 4;
   grid-column: 2/-2;
   background: Lavender;
-  color: lightsalmon;
+  color: darkcyan;
   padding: 1em;
   font-size: 2em;
   text-align: center;
   border-radius: 9px;
   height: 1em;
-  border: 1px solid LightSalmon;
+  border: 1px solid darkcyan;
 }
 /*------------*/
 .form-area {
