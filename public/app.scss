@@ -22,24 +22,6 @@ h3 {
   margin: 0;
   text-align: left;
 }
-a {
-  color: #007bff;
-  text-decoration: none;
-}
-button:focus,
-input:focus {
-  outline: none;
-  box-shadow: none;
-}
-a,
-a:hover {
-  text-decoration: none;
-}
-
-body {
-  font-family: "Roboto", sans-serif;
-  background-color: #e0e3e8;
-}
 
 /*------------*/
 .form-area {
@@ -50,9 +32,10 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  width: calc(100% - 4em);
 }
 .form-area .form-inner {
-  width: calc(500px);
+  width: calc(100% - 4em);
 }
 .form-control {
   display: block;
