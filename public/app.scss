@@ -29,6 +29,7 @@ ul {
   display: grid;
   grid-template-columns: 1em 1fr 1fr 1fr 1em;
   grid-template-rows: 1em 2em 1fr 2em 1em;
+  grid-gap: 1em;
   background: ivory;
   border-radius: 9px;
   border: 1px solid lightsalmon;
@@ -49,9 +50,12 @@ ul {
   grid-column: 2/-2;
 }
 .btn {
-  grid-row: -2;
+  grid-row: 4;
   grid-column: 2/-2;
-  font-family: Pacifico;
+  background: Lavender;
+  color: lightsalmon;
+  padding: 1em;
+  font-size: 2em;
 }
 /*------------*/
 .form-area {
