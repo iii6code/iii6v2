@@ -99,6 +99,11 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 1em;
+  width: calc(100% - 4em);
+}
+#day,
+#month,
+#year {
 }
 
 #real:valid,
