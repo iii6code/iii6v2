@@ -95,9 +95,9 @@ body {
 .iti {
   width: 100%;
 }
-.third {
-  width: calc((32%) - (4em / 4));
-  display: inline;
+#dater {
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr;
 }
 
 #real:valid,
