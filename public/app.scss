@@ -98,14 +98,13 @@ body {
 #dater {
   display: grid;
   grid-template-columns: 100px 100px 1fr;
-  grid-gap: 1em;
+  grid-gap: 3em;
   width: calc(100% - 3em);
 }
 #day,
 #month,
 #year {
   text-align: center;
-  margin-right: 1em;
 }
 
 #real:valid,
