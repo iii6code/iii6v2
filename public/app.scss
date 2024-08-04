@@ -26,7 +26,7 @@ h3 {
 
 .stage {
   display: grid;
-  grid-template-columns: 1em 1fr 1fr 1fr 1em;
+  grid-template-columns: 1em 1fr 1fr 1fr 1fr 1fr 1fr 1em;
   grid-template-rows: 1em 4em 1fr 4em 1em;
   grid-gap: 1em;
   background: ivory;
@@ -64,9 +64,10 @@ h3 {
   background: Lavender;
   color: lightsalmon;
   padding: 1em;
-  font-size: 1.5em;
+  font-size: 2em;
   text-align: center;
   border-radius: 9px;
+  height: 2em;
   border: 1px solid LightSalmon;
 }
 /*------------*/
