@@ -44,8 +44,7 @@ ul {
   font-size: 2em;
   text-align: center;
 }
-#list,
-#content {
+.content {
   grid-row: 3;
   grid-column: 2/-2;
 }
@@ -56,6 +55,9 @@ ul {
   color: lightsalmon;
   padding: 1em;
   font-size: 2em;
+  text-align: center;
+  border-radius: 9px;
+  border: 1px solid LightSalmon;
 }
 /*------------*/
 .form-area {
