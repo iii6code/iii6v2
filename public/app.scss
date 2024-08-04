@@ -28,8 +28,8 @@ h3 {
   grid-template-rows: 1em 1fr 1fr 1fr 1em;
   background: ivory;
   border-radius: 9px;
-  border: 1px solid lightsalmon;
-  margin: 1em 1em 1em 1em;
+  border: 1px 1px 0 1px solid lightsalmon;
+  margin: 1em 1em 0em 1em;
   padding: 1em;
   width: calc(100% - 4em);
 }
