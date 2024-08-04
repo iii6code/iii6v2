@@ -29,6 +29,7 @@
     "-": "^0.0.1",
     "@babel/core": "^7.16.7",
     "@chainlink/contracts": "^0.6.1",
+    "npm i intl-tel-input": "23.8.0",
     "@chainlink/contracts-ccip": "^0.7.6",
     "@ethersproject/experimental": "^5.7.0",
     "@metamask/detect-provider": "^1.2.0",
