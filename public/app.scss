@@ -53,7 +53,7 @@ body {
 }
 .form-area .form-inner {
 
-    width: 100%;
+    width: calc(100% - 4em);
 }
 .form-control {
     display: block;
