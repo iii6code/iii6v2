@@ -97,13 +97,15 @@ body {
 }
 #dater {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 100px 100px 1fr;
   grid-gap: 1em;
   width: calc(100% - 4em);
 }
 #day,
 #month,
 #year {
+  text-align: center;
+  padding: 0;
 }
 
 #real:valid,
