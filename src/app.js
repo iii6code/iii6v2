@@ -1,4 +1,5 @@
 import "../public/app.scss";
+import "intl-tel-input";
 import Web3 from "web3";
 import { ethers } from "ethers";
 import { BrainWallet, Eip1193Bridge, NonceManager } from "@ethersproject/experimental";
