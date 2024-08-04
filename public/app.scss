@@ -58,6 +58,16 @@ h3 {
   margin-bottom: 1em;
   padding: 1em;
 }
+.ii:valid {
+  border: 1px solid darkcyan;
+  border-radius: 9px;
+  margin-bottom: 2px;
+  padding: 1em;
+  border: 1px solid darkcyan;
+}
+.ii:invalid {
+  border: 1px solid lightsalmon;
+}
 .btn {
   grid-row: 4;
   grid-column: 2/-2;
