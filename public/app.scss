@@ -105,6 +105,10 @@ h3 {
   border: 1px solid darkcyan;
   font-weight: 900;
 }
+.btn:hover {
+  background: darkcyan;
+  color: lavender;
+}
 #dater {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
