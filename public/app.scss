@@ -119,6 +119,11 @@ h3 {
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 2px;
 }
+#phoner {
+  display: grid;
+  grid-template-columns: 36px 1fr;
+  grid-gap: 2px;
+}
 #day,
 #month,
 #year {
