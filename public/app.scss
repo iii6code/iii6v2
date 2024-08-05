@@ -36,6 +36,7 @@ h3 {
   margin: 1em 1em 0em 1em;
   padding: 1em;
   width: calc(100% - 4em);
+  max-width: 500px;
 }
 .title {
   grid-row: 2;
@@ -121,7 +122,7 @@ h3 {
   grid-gap: 1em;
 }
 .avt {
-  width: 120px;
+  width: 50%;
   border-radius: 9px;
 }
 #userinf {
