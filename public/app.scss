@@ -71,6 +71,17 @@ h3 {
   font-family: Roboto;
   width: calc(100% - 2em);
 }
+.inp {
+  border: 1px solid darkcyan;
+  border-radius: 9px;
+  margin-bottom: 2px;
+  padding: 1em;
+  border: 1px solid darkcyan;
+  height: 4em;
+  font-size: 1.2em;
+  font-family: Roboto;
+  width: calc(100% - 2em);
+}
 .btn {
   grid-row: 4;
   grid-column: 2/-2;
