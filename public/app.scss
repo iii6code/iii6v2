@@ -82,6 +82,9 @@ h3 {
   font-family: Roboto;
   width: calc(100%);
 }
+#risk {
+  width: calc(100% - 2em);
+}
 .btn {
   grid-row: 4;
   grid-column: 2/-2;
