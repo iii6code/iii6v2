@@ -57,9 +57,15 @@ h3 {
 }
 .li {
   border: 1px solid darkcyan;
+  background: darkcyan;
+  color: Lavender;
   border-radius: 9px;
   margin-bottom: 1em;
   padding: 1em;
+}
+.li:hover {
+  background: lavender;
+  color: darkcyan;
 }
 .ii {
   border: 1px solid darkcyan;
