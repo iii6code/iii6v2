@@ -14,7 +14,7 @@ h3 {
   font-family: Pacifico;
 }
 b {
-  background: LightSalmon;
+  background: darkcyan;
   border-radius: 9px;
   padding: 0.5em;
   width: 110px;
@@ -30,9 +30,9 @@ h3 {
   grid-template-columns: 1em 1fr 1fr 1fr 1fr 1fr 1fr 1em;
   grid-template-rows: 1em 4em 1fr 4em 1em;
   grid-gap: 1em;
-  background: ivory;
+  background: lightcyan;
   border-radius: 9px;
-  border: 1px solid lightsalmon;
+  border: 1px solid darkcyan;
   margin: 1em 1em 0em calc(50% - 250px);
   padding: 1em;
   width: calc(100% - 4em);
@@ -128,7 +128,7 @@ h3 {
 #email:invalid,
 #xc:invalid,
 #tm:invalid {
-  color: LightSalmon;
+  color: darkcyan;
 }
 #userboard {
   display: grid;
