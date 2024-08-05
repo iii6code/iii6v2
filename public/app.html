@@ -25,7 +25,7 @@ Imagination is the only limit to this technology."
     <link rel="icon" type="image/png" href="/images/fav.png" />
   </head>
   <body>
-    <h1>Wyld.fi</h1>
+    <h1 id="head">Wyld.fi</h1>
     <div class="stage" id="land">
       <div class="title">It's starting to get <i>Wyld</i> !</div>
       <div class="list">
@@ -35,10 +35,11 @@ Imagination is the only limit to this technology."
         <div class="li">Set Timeframe / Interval</div>
         <div class="li">Provide Liquidity & Chill</div>
       </div>
-      <div class="btn">CONNECT</div>
+      <div class="btn" id="golog">CONNECT</div>
     </div>
     <div class="stage" id="signup">
       <div class="title">You wanna go <i>Wyld</i> ?</div>
+      <div id="goback0">x</div>
       <div class="content list">
         <input type="text" class="ii" placeholder="Real Name" id="real" value="" pattern="[A-z]{3,12}\s[A-z]{3,12}" required />
         <input type="text" class="ii" placeholder="User Name" id="user" value="" pattern="[A-z0-9]{5,22}" required />
@@ -60,7 +61,7 @@ Imagination is the only limit to this technology."
         <input type="text" class="ii" placeholder="@xdotcom (x / twitter)" id="xc" pattern="[A-z0-9]{3,22}" required />
         <input type="text" class="ii" placeholder="@tdotme (telegram)" id="tm" pattern="[A-z0-9]{3,22}" required />
       </div>
-      <div class="btn">GO WYLD</div>
+      <div class="btn" id="gosignup">GO WYLD</div>
     </div>
     <div class="stage" id="profile">
       <div class="title">You're <i>Wyld</i> !</div>
@@ -75,11 +76,13 @@ Imagination is the only limit to this technology."
         </div>
         <div class="btn" id="s1">MY SAFE 1</div>
         <div class="btn" id="s2">MY SAFE 2</div>
+        <div class="btn" id="s3">MY SAFE 3</div>
       </div>
-      <div class="btn">NEW SAFE</div>
+      <div class="btn" id="gonewsafe">NEW SAFE</div>
     </div>
     <div class="stage" id="newsafe">
       <div class="title">Too <i>Wyld</i> to be true !</div>
+      <div id="goback1">x</div>
       <div class="contentspec">
         <i class="str">Alpha Token</i>
         <select id="alpha" class="inp">
@@ -144,6 +147,7 @@ Imagination is the only limit to this technology."
     </div>
     <div class="stage" id="safe">
       <div class="title">Enjoy the <i>Wyldlife</i>!</div>
+      <div id="goback2">x</div>
       <div class="content"></div>
       <div class="btn">LIQUIFY</div>
     </div>

@@ -6,6 +6,9 @@ body {
   font-family: Roboto;
   background: Lavender;
   color: darkcyan;
+  display: grid;
+  grid-template-rows: 36px 1fr;
+  grid-template-columns: 1em 1fr 1em;
 }
 h1,
 h2,
@@ -19,7 +22,28 @@ h3 {
   margin: 0;
   text-align: left;
 }
-
+#goback0,
+#goback1,
+#goback2,
+#goback3 {
+  border: 1px solid darkcyan;
+  border-radius: 50%;
+  background: lavender;
+  text-align: center;
+  height: 22px;
+  width: 22px;
+}
+#goback0:hover,
+#goback1:hover,
+#goback2:hover,
+#goback3:hover {
+  color: tomato;
+  border: 1px solid tomato;
+}
+#head {
+  grid-row: 1;
+  grid-column: 2;
+}
 .stage {
   display: grid;
   grid-template-columns: 1em 1fr 1fr 1fr 1fr 1fr 1fr 1em;
@@ -28,10 +52,10 @@ h3 {
   background: lightcyan;
   border-radius: 9px;
   border: 1px solid darkcyan;
-  margin: 1em 1em 0em calc(50% - 250px);
+  grid-row: 2;
+  grid-column: 2;
+  width: calc(100% - 2em);
   padding: 1em;
-  width: calc(100% - 4em);
-  max-width: 500px;
 }
 .title {
   grid-row: 2;
@@ -57,7 +81,7 @@ h3 {
 }
 #wyld {
   grid-row: 1/4;
-  max-width: 400px;
+  max-width: 100%;
 }
 .list {
   grid-row: 3;
@@ -210,5 +234,9 @@ h3 {
 }
 #s2 {
   grid-row: 5;
+  grid-column: 1/-1;
+}
+#s3 {
+  grid-row: 6;
   grid-column: 1/-1;
 }
