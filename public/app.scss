@@ -69,12 +69,6 @@ h3 {
   font-size: 1.5em;
   font-family: Roboto;
 }
-.ii:valid {
-  border: 1px solid darkcyan;
-}
-.ii:invalid {
-  border: 1px solid tomato;
-}
 .btn {
   grid-row: 4;
   grid-column: 2/-2;
@@ -130,7 +124,6 @@ h3 {
 #dater {
   display: grid;
   grid-template-columns: 150px 150px 1fr;
-  width: calc(100%);
 }
 #day,
 #month,
