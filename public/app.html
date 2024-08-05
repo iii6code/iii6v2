@@ -54,7 +54,7 @@ Imagination is the only limit to this technology."
             <option id="uk">+44</option>
             <option id="de">+49</option>
           </select>
-          <input type="text" class="ii" placeholder="Email" id="email" pattern="[A-z0-9]{2,12}[@][A-z0-9]{1,12}[.][A-z0-9]{2,12}" required />
+          <input type="text" class="ii" placeholder="Mobile Number" id="tel" pattern="[A-z0-9]{2,12}[@][A-z0-9]{1,12}[.][A-z0-9]{2,12}" required />
         </div>
         <input type="text" class="ii" placeholder="Email" id="email" pattern="[A-z0-9]{2,12}[@][A-z0-9]{1,12}[.][A-z0-9]{2,12}" required />
         <input type="text" class="ii" placeholder="@xdotcom (x / twitter)" id="xc" pattern="[A-z0-9]{3,22}" required />
@@ -65,26 +65,23 @@ Imagination is the only limit to this technology."
     <div class="stage" id="profile">
       <div class="title">You're <i>Wyld</i> !</div>
       <div class="content">
-        <div class="">
-          <img src="https://images.unsplash.com/photo-1640960543409-dbe56ccc30e2" class="avt" />
-          <div id="userinf">
-            <b>username</b>
-            <i>0x123...def</i>
-            <i>status quote !</i>
-            <i>@x.com</i>
-            <i>@t.me</i>
-          </div>
+        <img src="https://images.unsplash.com/photo-1640960543409-dbe56ccc30e2" class="avt" />
+        <div id="userinf">
+          <b>username</b>
+          <i>0x123...def</i>
+          <i>status quote !</i>
+          <i>@x.com</i>
+          <i>@t.me</i>
         </div>
-
-        <div class="btn">MY SAFE 1</div>
-        <div class="btn">MY SAFE 2</div>
+        <div class="btn" id="s1">MY SAFE 1</div>
+        <div class="btn" id="s2">MY SAFE 2</div>
       </div>
       <div class="btn">NEW SAFE</div>
     </div>
     <div class="stage" id="newsafe">
       <div class="title">Too <i>Wyld</i> to be true !</div>
       <div class="content">
-        <i>Alpha Token</i>
+        <i class="str">Alpha Token</i>
         <select id="alpha" class="inp">
           <option id="default" selected>----</option>
           <option id="usdc">USDC</option>
@@ -94,7 +91,7 @@ Imagination is the only limit to this technology."
           <option id="wfil">WFIL</option>
           <option id="link">LINK</option>
         </select>
-        <i>Secondary Token</i>
+        <i class="str">Secondary Token</i>
         <select id="beta" class="inp">
           <option id="default" selected>----</option>
           <option id="usdc">USDC</option>
@@ -113,9 +110,9 @@ Imagination is the only limit to this technology."
           <option id="wfil">WFIL</option>
           <option id="link">LINK</option>
         </select>
-        <i>Risk Management</i>
+        <i class="str">Risk Management</i>
         <input id="risk" class="inp" type="range" min="1" max="5" steps="1" />
-        <i>Update Interval</i>
+        <i class="str">Update Interval</i>
         <select id="interval" class="inp">
           <option id="default" selected>----</option>
           <option id="1">1 Min</option>
@@ -126,7 +123,7 @@ Imagination is the only limit to this technology."
           <option id="24h">1 Day</option>
           <option id="48h">2 Days</option>
         </select>
-        <i>Lifetime</i>
+        <i class="str">Lifetime</i>
         <select id="lifetime" class="inp">
           <option id="default" selected>----</option>
           <option id="60">1 Hour</option>
